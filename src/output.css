@@ -372,6 +372,9 @@
   .mt-3\.75 {
     margin-top: calc(var(--spacing) * 3.75);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -499,6 +502,9 @@
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-45 {
     height: calc(var(--spacing) * 45);
   }
@@ -525,6 +531,9 @@
   }
   .h-fit {
     height: fit-content;
+  }
+  .h-full {
+    height: 100%;
   }
   .h-px {
     height: 1px;
@@ -585,6 +594,9 @@
   }
   .w-\[92\%\] {
     width: 92%;
+  }
+  .w-auto {
+    width: auto;
   }
   .w-full {
     width: 100%;
@@ -1417,6 +1429,12 @@
       --tw-translate-y: calc(var(--spacing) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
+    .group-hover\:scale-105:is(:where(.group):hover *) {
+      --tw-scale-x: 105%;
+      --tw-scale-y: 105%;
+      --tw-scale-z: 105%;
+      scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
   }
   .placeholder\:text-white\/60::placeholder {
     color: color-mix(in srgb, #fff 60%, transparent);
@@ -1807,6 +1825,9 @@
     .xl\:order-3 {
       order: 3;
     }
+    .xl\:order-none {
+      order: 0;
+    }
     .xl\:col-start-1 {
       grid-column-start: 1;
     }
@@ -1879,6 +1900,9 @@
     .xl\:inline {
       display: inline;
     }
+    .xl\:inline-flex {
+      display: inline-flex;
+    }
     .xl\:aspect-auto {
       aspect-ratio: auto;
     }
@@ -1900,6 +1924,9 @@
     }
     .xl\:h-16\.25 {
       height: calc(var(--spacing) * 16.25);
+    }
+    .xl\:h-36 {
+      height: calc(var(--spacing) * 36);
     }
     .xl\:h-50 {
       height: calc(var(--spacing) * 50);
@@ -1930,6 +1957,9 @@
     }
     .xl\:min-h-16\.25 {
       min-height: calc(var(--spacing) * 16.25);
+    }
+    .xl\:min-h-44 {
+      min-height: calc(var(--spacing) * 44);
     }
     .xl\:min-h-45 {
       min-height: calc(var(--spacing) * 45);
@@ -2078,6 +2108,9 @@
     .xl\:gap-4 {
       gap: calc(var(--spacing) * 4);
     }
+    .xl\:gap-5 {
+      gap: calc(var(--spacing) * 5);
+    }
     .xl\:gap-6 {
       gap: calc(var(--spacing) * 6);
     }
@@ -2141,6 +2174,9 @@
     .xl\:border-stone {
       border-color: var(--color-stone);
     }
+    .xl\:bg-olive-card {
+      background-color: var(--color-olive-card);
+    }
     .xl\:bg-transparent {
       background-color: transparent;
     }
@@ -2170,6 +2206,9 @@
     }
     .xl\:p-3\.75 {
       padding: calc(var(--spacing) * 3.75);
+    }
+    .xl\:p-6 {
+      padding: calc(var(--spacing) * 6);
     }
     .xl\:p-7\.5 {
       padding: calc(var(--spacing) * 7.5);
@@ -2329,6 +2368,20 @@
     .xl\:leading-\[1\.6\] {
       --tw-leading: 1.6;
       line-height: 1.6;
+    }
+    .xl\:text-gold {
+      color: var(--color-gold);
+    }
+    .xl\:text-white {
+      color: var(--color-white);
+    }
+    .xl\:text-white\/80 {
+      color: color-mix(in srgb, #fff 80%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .xl\:text-white\/80 {
+        color: color-mix(in oklab, var(--color-white) 80%, transparent);
+      }
     }
     .xl\:first\:border-s-0:first-child {
       border-inline-start-style: var(--tw-border-style);

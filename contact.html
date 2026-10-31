@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parla</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="./src/theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@100..900&family=Lalezar&family=Parastoo:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-mauve font-lalezar overflow-x-hidden">
+
+    <section>
+        <p class="text-center text-15 bg-taupe-dark text-welcome p-1.25 xl:text-21">به اکسسوری پارلا خوش آمدید</p>
+    </section>
+
+    <header class="relative overflow-hidden flex flex-row-reverse flex-wrap justify-between items-center gap-0.5 bg-olive md:h-13.75 md:px-5 md:gap-5 xl:h-16.25 xl:px-6.25 xl:gap-12.5 xl:text-xl">
+
+        <h1 class="order-1 ml-2.5 text-center text-2xl leading-none whitespace-nowrap font-playfair text-white md:ml-0 md:text-3xl xl:ml-2.5 xl:text-display xl:-translate-y-0.5">PARLA</h1>
+
+        <div class="order-2 flex items-center justify-center gap-1.25 h-7.5 md:h-7 xl:absolute xl:translate-x-[95%] xl:gap-2 xl:h-7.5">
+            <input class="w-27.5 h-7 px-2.5 py-1.25 rounded-full text-tiny bg-taupe-light text-black md:w-30 md:h-6.5 md:px-2 md:py-1 xl:w-37.5 xl:h-7 xl:px-2.5 xl:py-1.25 xl:text-xs" type="text" placeholder="جستجو..">
+            <a href="signup.html">
+                <button class="bg-olive mt-2.75 hover:opacity-70 hover:bg-olive-light md:mt-1.25 xl:mt-2.75">
+                    <img class="w-5 h-5 md:w-4.5 md:h-4.5 xl:w-5 xl:h-5" src="image/User-1.png" alt="ثبت نام">
+                </button>
+            </a>
+        </div>
+
+        <nav class="relative z-2 flex justify-between items-center order-3 w-full p-3.75 text-white bg-olive-light md:static md:w-auto md:p-0 md:gap-5 md:bg-olive xl:relative xl:p-3.75 xl:gap-12.5">
+            <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir xl:hover:text-figure-shadow" href="index.html">خانه</a>
+            <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir xl:hover:text-figure-shadow" href="index.html#off">تخفیف ها</a>
+            <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir xl:hover:text-figure-shadow" href="index.html#product">محصولات</a>
+            <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir xl:hover:text-figure-shadow" href="index.html#about">درباره ما</a>
+            <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir xl:hover:text-figure-shadow" href="contact.html">تماس با ما</a>
+        </nav>
+
+    </header>
+
+    <section class="flex flex-col items-center justify-center w-[90%] mx-auto mt-12.5 mb-40 bg-olive md:flex-row-reverse md:h-137.5 md:mt-10 md:mb-30 xl:h-162.5 xl:mb-25">
+
+        <img class="self-center w-62.5 h-90 mt-5 object-cover rounded-lg md:w-[40%] md:h-137.5 md:m-0 xl:w-125 xl:h-162.5 xl:ml-0" src="image/contact.jpg" alt="">
+
+        <div class="flex-1 grid grid-cols-2 items-center gap-1.25 p-3.75 text-tiny font-vazir md:gap-x-3.75 md:gap-y-2.5 md:p-6.25 md:text-sm xl:gap-1.25 xl:p-7.5 xl:leading-[1.6]">
+
+            <h1 class="col-span-full text-right text-xl font-bold md:text-28 xl:text-32">با ما در ارتباط باشید</h1>
+
+            <p class="hidden col-span-full md:block md:text-sm xl:text-17">
+                سوالی درباره محصولات، سفارش یا خدمات پارلا دارید؟ <br>
+                خوشحال می‌شویم پیام شما را دریافت کنیم. اطلاعات خود را وارد کنید و پیامتان را برای ما ارسال کنید. <br>
+                در اولین فرصت با شما در ارتباط خواهیم بود.
+            </p>
+
+            <p class="col-span-full flex flex-col items-center justify-center text-base md:hidden">
+                سوالی درباره محصولات، سفارش یا<br> خدمات پارلا دارید؟ <br>
+                خوشحال می‌شویم پیام شما را دریافت <br>کنیم. اطلاعات خود را وارد کنید و پیامتان<br> را برای ما ارسال کنید. <br>
+                در اولین فرصت با شما در ارتباط خواهیم<br> بود.
+            </p>
+
+            <form class="col-span-full grid grid-cols-2 gap-x-5 gap-y-2.5 mt-6.25 md:gap-x-3.75 md:mt-0 xl:gap-x-5">
+
+                <label for="name" class="col-start-1 row-start-1 text-right text-tiny md:text-13 xl:text-15">نام:</label>
+                <input id="name" class="col-start-1 row-start-2 w-full h-6.25 p-0.75 text-13 font-vazir bg-white rounded-sm " type="text" placeholder="نام ...">
+
+                <label for="email" class="col-start-2 row-start-1 text-right text-tiny md:text-13 xl:text-15">ایمیل:</label>
+                <input id="email" class="col-start-2 row-start-2 w-full h-6.25 p-0.75 text-13 font-vazir bg-white rounded-sm" type="email" placeholder="ایمیل ...">
+
+                <label for="message" class="col-span-full text-right text-tiny md:text-13 xl:text-15">پیام:</label>
+                <textarea id="message" rows="10" cols="10" class="col-span-full w-full min-h-45 p-0.75 text-13 font-vazir bg-white rounded-md md:min-h-32.5 xl:min-h-45 xl:rounded-sm" placeholder="پیام ..."></textarea>
+
+                <button class="col-span-full justify-self-center w-15 h-7.5 mt-1.25 text-13 font-vazir bg-mauve rounded-md cursor-pointer transition duration-300 hover:bg-send-hover hover:shadow-[0_3px_8px_rgba(0,0,0,0.15)] xl:w-20">ارسال</button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="flex flex-col items-center gap-4 px-4 py-7 text-center text-black font-vazir bg-taupe-dark md:grid md:grid-cols-3 md:items-start md:gap-x-6 md:gap-y-3 md:px-10 md:py-8 xl:px-15 xl:py-10">
+
+        <div class="md:col-start-2 md:row-start-1">
+            <h2 class="font-playfair font-normal text-36 md:text-44 xl:text-6xl">PARLA</h2>
+            <p class="text-sm md:text-15 xl:text-17">زیبایی در جزئیات</p>
+        </div>
+
+        <div class="md:col-start-1 md:row-start-1">
+            <h3 class="mb-2.5 text-17 font-bold xl:text-19">ارتباط با ما</h3>
+            <p class="text-sm leading-loose">
+                <i class="fa-solid fa-location-dot mx-0.75 text-17"></i> ادرس : تهران ،خیابان ولیعصر،کوچه بهار،پلاک 24 <br>
+                <i class="fa-solid fa-phone mx-0.75 text-17"></i> تلفن : 78904432 <br>
+                <i class="fa-brands fa-instagram mx-0.75 text-17"></i> اینستاگرام : parla-accessories
+            </p>
+        </div>
+
+        <div class="md:col-start-3 md:row-start-1">
+            <h3 class="mb-2.5 text-17 font-bold xl:text-19">دسترسی سریع</h3>
+            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 md:flex-col md:items-center md:gap-y-1.5">
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="index.html">خانه</a>
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="index.html#product">محصولات</a>
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="index.html#off">تخفیف‌ها</a>
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="index.html#about">درباره ما</a>
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="contact.html">تماس با ما</a>
+            </nav>
+        </div>
+
+    </footer>
+
+</body>
+</html>

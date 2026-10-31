@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parla</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+    <script src="./src/theme.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@100..900&family=Lalezar&family=Parastoo:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="min-h-screen bg-mauve font-lalezar">
+
+    <section>
+        <p class="text-center text-17 bg-taupe-dark text-welcome p-1.25 md:text-19 xl:text-21">به اکسسوری پارلا خوش آمدید</p>
+    </section>
+
+    <header class="flex flex-row-reverse flex-wrap items-center justify-between gap-x-0 gap-y-2 pt-2 bg-olive md:flex-nowrap md:gap-5 md:min-h-15 md:pt-0 md:px-5 xl:min-h-16.25 xl:px-6.25">
+
+        <h1 class="order-1 mx-3 text-28 leading-none whitespace-nowrap font-playfair text-white md:m-0 md:text-32 xl:text-display">PARLA</h1>
+
+        <div class="order-2 flex items-center gap-1.5 md:order-3">
+            <input class="w-30 h-7.5 mr-1.25 px-3 text-sm text-black bg-taupe-light rounded-full md:w-37.5 xl:w-45 xl:text-15" type="text" placeholder="جستجو..">
+            <a href="signup.html">
+                <button class="mx-3 p-1 translate-y-1 cursor-pointer hover:opacity-70 hover:bg-olive-light md:mx-0">
+                    <img class="w-5 h-5" src="image/User-1.png" alt="ثبت نام">
+                </button>
+            </a>
+        </div>
+
+        <nav class="order-4 basis-full flex flex-wrap justify-center gap-x-1.25 gap-y-1 px-2 py-2.5 bg-olive border-t border-white/25 md:order-2 md:flex-auto md:basis-auto md:gap-5 md:p-0 md:bg-transparent md:border-t-0 xl:gap-7">
+            <a class="px-1.5 py-1 text-white text-xs font-vazir whitespace-nowrap xl:text-base xl:hover:text-figure-shadow" href="index.html">خانه</a>
+            <a class="px-1.5 py-1 text-white text-xs font-vazir whitespace-nowrap xl:text-base xl:hover:text-figure-shadow" href="index.html#off">تخفیف ها</a>
+            <a class="px-1.5 py-1 text-white text-xs font-vazir whitespace-nowrap xl:text-base xl:hover:text-figure-shadow" href="index.html#product">محصولات</a>
+            <a class="px-1.5 py-1 text-white text-xs font-vazir whitespace-nowrap xl:text-base xl:hover:text-figure-shadow" href="index.html#about">درباره ما</a>
+            <a class="px-1.5 py-1 text-white text-xs font-vazir whitespace-nowrap xl:text-base xl:hover:text-figure-shadow" href="contact.html">تماس با ما</a>
+        </nav>
+
+    </header>
+
+    <main class="flex justify-center p-4 text-right font-vazir md:px-6 md:py-8 xl:px-7.5 xl:py-10">
+
+        <form class="flex flex-col gap-0.5 w-full max-w-250 md:flex-row md:items-start md:justify-center md:gap-10 xl:gap-25">
+
+            <section class="flex flex-col gap-3 mt-5 p-5 bg-taupe-light rounded-lg md:flex-1 md:max-w-100 md:min-h-132.5 md:p-6 xl:max-w-112.5 xl:min-h-150 xl:p-7.5">
+
+                <h1 class="mb-3 text-2xl font-bold xl:text-28">ورود</h1>
+
+                <input class="block w-full h-9.5 px-2.5 text-15 font-semibold bg-white rounded-md xl:text-17" type="email" placeholder="ایمیل">
+
+                <input class="block w-full h-9.5 px-2.5 text-15 font-semibold bg-white rounded-md xl:text-17" type="password" placeholder="رمز عبور">
+
+                <a href="#" class="inline-block mt-3.75 text-13 underline underline-offset-5">رمز عبور خود را فراموش کرده اید؟</a>
+
+                <button class="self-center min-w-25 mt-5 px-4 py-2 text-lg bg-button rounded-sm cursor-pointer">وارد شوید</button>
+
+            </section>
+
+            <section class="flex flex-col gap-3 mt-5 p-5 bg-taupe-light rounded-lg md:flex-1 md:max-w-100 md:min-h-132.5 md:p-6 xl:max-w-112.5 xl:min-h-150 xl:p-7.5">
+
+                <h1 class="mb-3 text-2xl font-bold xl:text-28">ثبت نام</h1>
+
+                <input class="block w-full h-9.5 px-2.5 text-15 font-semibold bg-white rounded-md xl:text-17" type="text" name="first-name" placeholder="نام">
+
+                <input class="block w-full h-9.5 px-2.5 text-15 font-semibold bg-white rounded-md xl:text-17" type="text" name="last-name" placeholder="نام خانوادگی">
+
+                <input class="block w-full h-9.5 px-2.5 text-15 font-semibold bg-white rounded-md xl:text-17" type="email" name="email" placeholder="ایمیل">
+
+                <input class="block w-full h-9.5 px-2.5 text-15 font-semibold bg-white rounded-md xl:text-17" type="password" name="password" placeholder="رمز عبور">
+
+                <textarea name="about-me" id="about-me" rows="5" cols="25" class="block w-full min-h-25 px-2.5 py-2 text-15 text-field-text bg-white rounded-md resize-y xl:text-17" placeholder="توضیحات..."></textarea>
+
+                <button type="submit" class="self-center min-w-25 mt-5 px-4 py-2 text-lg bg-button rounded-sm cursor-pointer">ثبت نام</button>
+
+            </section>
+
+        </form>
+
+    </main>
+
+    <footer class="flex flex-col items-center gap-4 px-4 py-7 text-center text-black font-vazir bg-taupe-dark md:grid md:grid-cols-3 md:items-start md:gap-x-6 md:gap-y-3 md:px-10 md:py-8 xl:px-15 xl:py-10">
+
+        <div class="md:col-start-2 md:row-start-1">
+            <h2 class="font-playfair font-normal text-36 md:text-44 xl:text-6xl">PARLA</h2>
+            <p class="text-sm md:text-15 xl:text-17">زیبایی در جزئیات</p>
+        </div>
+
+        <div class="md:col-start-1 md:row-start-1">
+            <h3 class="mb-2.5 text-17 font-bold xl:text-19">ارتباط با ما</h3>
+            <p class="text-sm leading-loose">
+                <i class="fa-solid fa-location-dot mx-0.75 text-17"></i> ادرس : تهران ،خیابان ولیعصر،کوچه بهار،پلاک 24 <br>
+                <i class="fa-solid fa-phone mx-0.75 text-17"></i> تلفن : 78904432 <br>
+                <i class="fa-brands fa-instagram mx-0.75 text-17"></i> اینستاگرام : parla-accessories
+            </p>
+        </div>
+
+        <div class="md:col-start-3 md:row-start-1">
+            <h3 class="mb-2.5 text-17 font-bold xl:text-19">دسترسی سریع</h3>
+            <nav class="flex flex-wrap justify-center gap-x-6 gap-y-3 md:flex-col md:items-center md:gap-y-1.5">
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="index.html">خانه</a>
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="index.html#product">محصولات</a>
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="index.html#off">تخفیف‌ها</a>
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="index.html#about">درباره ما</a>
+                <a class="text-sm xl:text-base hover:text-taupe-light" href="contact.html">تماس با ما</a>
+            </nav>
+        </div>
+
+    </footer>
+
+</body>
+</html>

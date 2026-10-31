@@ -7,7 +7,7 @@
 
    
     <link rel="stylesheet" href="./src/output.css">
-    <script src="./src/theme.js"></script>
+    <script src="./js/slider.js" defer></script>
 
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -162,7 +162,7 @@
         </a>
       </li>
 
-      <li class="w-24 md:w-36 xl:w-44">
+      <li class="hidden w-[21%] md:block md:w-36 xl:w-44">
         <a href="#" class="group block text-center">
           <figure>
             <img src="image/watch1.png" alt="ساعت" class="aspect-square w-full rounded-t-full bg-clay object-cover transition duration-300 group-hover:-translate-y-1">
@@ -178,109 +178,37 @@
 
   </section>
 
+  <section id="off" class="py-6 xl:-mt-12 xl:pb-10">
 
+    <article class="relative mx-4 flex items-center gap-3 overflow-hidden rounded-2xl border border-gold/40 bg-olive-card bg-[url('../image/leaf-left.png'),url('../image/leaf-right.png')] bg-[position:left_bottom,right_top] bg-[size:auto_35%,auto_38%] bg-no-repeat px-[7%] pt-6 pb-9 text-white xl:mx-auto xl:h-120 xl:max-w-360 xl:gap-10 xl:overflow-visible xl:rounded-none xl:border-0 xl:bg-transparent xl:bg-[url('../image/bg-collection.png')] xl:bg-[position:center] xl:bg-[size:cover] xl:px-[19%] xl:pt-0 xl:pb-5">
 
-<h2 id="off" class="flex items-center gap-3 w-full max-w-sm mx-auto px-4 mt-10 mb-6 xl:gap-6 xl:max-w-4xl xl:px-0 xl:mt-16 xl:mb-12">
-   <span class="h-px flex-1 bg-linear-to-r from-transparent to-olive xl:h-0.5"></span>
-   <span class="font-vazir text-xl whitespace-nowrap xl:text-3xl">تخفیف‌ها</span>
-   <span class="h-px flex-1 bg-linear-to-r from-transparent to-olive -scale-x-100 xl:h-0.5"></span>
-</h2>
+      <header class="w-[36%] shrink-0 text-right xl:w-auto xl:flex-1 xl:shrink">
+        <p class="hidden text-gold xl:block">تخفیف‌ها</p>
+        <h2 class="text-sm font-medium leading-snug xl:mt-2 xl:text-4xl">پیشنهادهای شگفت‌انگیز</h2>
+        <p class="hidden text-white/80 xl:mt-3 xl:block xl:text-base">تا ۵۰ درصد تخفیف روی منتخب جواهرات پارلا</p>
+        <a href="#product" class="mt-3 inline-flex items-center gap-1.5 rounded-md border border-gold px-3 py-1 text-[11px] text-gold hover:bg-gold hover:text-forest-deep xl:mt-6 xl:gap-3 xl:px-6 xl:py-2.5 xl:text-base">
+          مشاهده<span class="hidden xl:inline">&nbsp;تخفیف‌ها</span>
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </header>
 
-<section class="flex flex-col gap-2 w-[92%] mx-auto my-8 p-3 text-white bg-olive rounded-lg overflow-hidden xl:flex-row xl:items-center xl:justify-center xl:h-107.5 xl:p-7.5 xl:gap-2.5">
+      <ul data-slider class="flex min-w-0 flex-1 snap-x snap-mandatory gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden xl:flex-[2] xl:gap-3 xl:overflow-visible">
+        <li class="shrink-0 basis-[48%] snap-start xl:shrink xl:flex-1 xl:basis-auto">
+          <img src="image/collection1.png" alt="گوشواره آویز" class="aspect-4/5 w-full rounded-xl object-cover xl:aspect-auto xl:h-60 xl:rounded-2xl">
+        </li>
+        <li class="shrink-0 basis-[48%] snap-start xl:shrink xl:flex-1 xl:basis-auto">
+          <img src="image/collection2.png" alt="گردنبند ظریف" class="aspect-4/5 w-full rounded-xl object-cover xl:aspect-auto xl:h-60 xl:rounded-2xl">
+        </li>
+        <li class="shrink-0 basis-[48%] snap-start xl:shrink xl:flex-1 xl:basis-auto">
+          <img src="image/collection3.png" alt="انگشتر طلایی" class="aspect-4/5 w-full rounded-xl object-cover xl:aspect-auto xl:h-60 xl:rounded-2xl">
+        </li>
+      </ul>
 
-    <p class="hidden xl:block w-30 text-center text-3xl leading-[1.2] text-white">پیشنهاد <br> شگفت انگیز</p>
+      <nav data-slider-dots aria-label="اسلایدها" class="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2 xl:hidden"></nav>
 
-    <p class="text-center text-xl font-vazir xl:hidden">پیشنهاد شگفت انگیز</p>
+    </article>
 
-    <div class="flex flex-row gap-3 w-full p-1 pb-3 overflow-x-auto overflow-y-hidden scroll-smooth snap-x snap-mandatory [scrollbar-width:thin] [scrollbar-color:var(--color-taupe-dark)_var(--color-taupe-light)] xl:w-[calc(100%_-_150px)] xl:p-2.5">
-
-        <figure class="flex-none basis-47.5 h-74.75 mt-5 bg-taupe-light text-black rounded-lg xl:basis-62.5 xl:h-85 xl:mt-10 xl:-translate-y-1.25">
-            <img class="w-full h-47.5 object-cover rounded-lg" src="image/p1-bracelet.jpg" alt="">
-            <figcaption class="h-15 p-2.5 text-right text-lg">دستبند ست مهره ای</figcaption>
-            <p class="p-2.5 text-right leading-[0.7] xl:py-1.25 xl:leading-[1.2]">
-                <del class="text-xs opacity-50">790،000</del>
-                <br>
-                <span class="text-xs xl:text-13">500،000 تومان</span>
-            </p>
-        </figure>
-
-        <figure class="flex-none basis-47.5 h-74.75 mt-5 bg-taupe-light text-black rounded-lg xl:basis-62.5 xl:h-85 xl:mt-10 xl:-translate-y-1.25">
-            <img class="w-full h-47.5 object-cover rounded-lg" src="image/p2-watch.jpg" alt="">
-            <figcaption class="h-15 p-2.5 text-right text-text-15">ساعت طلایی صفحه بیضی</figcaption>
-            <p class="p-2.5 text-right leading-[0.7] xl:py-1.25 xl:leading-[1.2]">
-                <del class="text-xs opacity-50">1،250،000</del>
-                <br>
-                <span class="text-xs xl:text-13">998،000 تومان</span>
-            </p>
-        </figure>
-
-        <figure class="flex-none basis-47.5 h-74.75 mt-5 bg-taupe-light text-black rounded-lg xl:basis-62.5 xl:h-85 xl:mt-10 xl:-translate-y-1.25">
-            <img class="w-full h-47.5 object-cover rounded-lg" src="image/p3-earrings.jpg" alt="">
-            <figcaption class="h-15 p-2.5 text-right text-lg">گوشواره طرح نخ</figcaption>
-            <p class="p-2.5 text-right leading-[0.7] xl:py-1.25 xl:leading-[1.2]">
-                <del class="text-xs opacity-50">650،000</del>
-                <br>
-                <span class="text-xs xl:text-13">320،000 تومان</span>
-            </p>
-        </figure>
-
-        <figure class="flex-none basis-47.5 h-74.75 mt-5 bg-taupe-light text-black rounded-lg xl:basis-62.5 xl:h-85 xl:mt-10 xl:-translate-y-1.25">
-            <img class="w-full h-47.5 object-cover rounded-lg" src="image/p4-ring.jpg" alt="">
-            <figcaption class="h-15 p-2.5 text-right text-lg">انگشتر مدل گره</figcaption>
-            <p class="p-2.5 text-right leading-[0.7] xl:py-1.25 xl:leading-[1.2]">
-                <del class="text-xs opacity-50">590،000</del>
-                <br>
-                <span class="text-xs xl:text-13">300،000 تومان</span>
-            </p>
-        </figure>
-
-        <figure class="flex-none basis-47.5 h-74.75 mt-5 bg-taupe-light text-black rounded-lg xl:basis-62.5 xl:h-85 xl:mt-10 xl:-translate-y-1.25">
-            <img class="w-full h-47.5 object-cover rounded-lg" src="image/m9.jpg" alt="">
-            <figcaption class="h-15 p-2.5 text-right text-lg">گوشواره طرح نخ</figcaption>
-            <p class="p-2.5 text-right leading-[0.7] xl:py-1.25 xl:leading-[1.2]">
-                <del class="text-xs opacity-50">650،000</del>
-                <br>
-                <span class="text-xs xl:text-13">320،000 تومان</span>
-            </p>
-        </figure>
-
-
-        <figure class="flex-none basis-47.5 h-74.75 mt-5 bg-taupe-light text-black rounded-lg xl:basis-62.5 xl:h-85 xl:mt-10 xl:-translate-y-1.25">
-            <img class="w-full h-47.5 object-cover rounded-lg" src="image/m10.jpg" alt="">
-            <figcaption class="h-15 p-2.5 text-right text-lg">گوشواره طرح نخ</figcaption>
-            <p class="p-2.5 text-right leading-[0.7] xl:py-1.25 xl:leading-[1.2]">
-                <del class="text-xs opacity-50">650،000</del>
-                <br>
-                <span class="text-xs xl:text-13">320،000 تومان</span>
-            </p>
-        </figure>
-
-
-        <figure class="flex-none basis-47.5 h-74.75 mt-5 bg-taupe-light text-black rounded-lg xl:basis-62.5 xl:h-85 xl:mt-10 xl:-translate-y-1.25">
-            <img class="w-full h-47.5 object-cover rounded-lg" src="image/p7.jpg" alt="">
-            <figcaption class="h-15 p-2.5 text-right text-lg">گوشواره طرح نخ</figcaption>
-            <p class="p-2.5 text-right leading-[0.7] xl:py-1.25 xl:leading-[1.2]">
-                <del class="text-xs opacity-50">650،000</del>
-                <br>
-                <span class="text-xs xl:text-13">320،000 تومان</span>
-            </p>
-        </figure>
-
-
-        <figure class="flex-none basis-47.5 h-74.75 mt-5 bg-taupe-light text-black rounded-lg xl:basis-62.5 xl:h-85 xl:mt-10 xl:-translate-y-1.25">
-            <img class="w-full h-47.5 object-cover rounded-lg" src="image/p7.jpg" alt="">
-            <figcaption class="h-15 p-2.5 text-right text-lg">گوشواره طرح نخ</figcaption>
-            <p class="p-2.5 text-right leading-[0.7] xl:py-1.25 xl:leading-[1.2]">
-                <del class="text-xs opacity-50">650،000</del>
-                <br>
-                <span class="text-xs xl:text-13">320،000 تومان</span>
-            </p>
-        </figure>
-
-    </div>
-
-</section>
-
+  </section>
 
 
 <h2 id="product" class="flex items-center gap-4 w-full max-w-3xl mx-auto my-10 px-4">

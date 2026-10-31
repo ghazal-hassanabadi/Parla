@@ -11,48 +11,58 @@
 
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Estedad:wght@100..900&family=Lalezar&family=Noto+Sans+Khudawadi&family=Parastoo:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-
+       <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
        
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <title>Parla</title>
 </head>
 
-<body class="bg-mauve font-lalezar overflow-x-hidden  ">
-   <section>
-     <p class="text-center text-[15px] xl:text-[21px] bg-taupe-dark text-welcome p-1.25">
-        به اکسسوری پارلا خوش آمدید
-     </p>
-   </section>
-   
+<body class="overflow-x-hidden bg-paper font-vazir text-ink">
 
-<header class="bg-olive gap-0.5 relative overflow-hidden flex flex-row-reverse flex-wrap justify-between items-center xl:h-16.25 xl:px-6.25 xl:text-xl xl:gap-12.5">
+  <p class="bg-moss px-4 py-2 text-center text-xs text-gold-soft xl:text-sm">
+    <i class="fa-solid fa-truck-fast ml-2"></i>
+    ارسال رایگان برای خریدهای بالای ۱,۵۰۰,۰۰۰ تومان
+  </p>
 
-   <h1 class="text-center text-2xl order-1 whitespace-nowrap leading-none -translate-y-0.75 font-playfair text-white pl-3.75 xl:text-display xl:-translate-y-0.5 xl:pl-0">PARLA</h1>
+  <header class="bg-forest text-white">
+    <section class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-3 xl:flex-nowrap xl:px-10 xl:py-5">
 
-    <div class="items-center order-2 flex justify-center gap-1.25 h-7.5 p-5 xl:absolute xl:translate-x-[95%] xl:gap-2 xl:p-0">
-        <input class="w-27.5 h-7 px-2.5 py-1.25 rounded-full text-tiny bg-taupe-light text-black xl:w-37.5 xl:text-xs" placeholder="جستجو..">
-        <a href="signup.html">
-            <button class="bg-olive mt-2.75 hover:opacity-70 hover:bg-olive-light">
-                <img class="w-5 h-5" src="image\User-1.png" alt="ثبت نام">
-            </button>
-        </a>
-    </div>
+      <a href="index.html" class="order-1 text-center leading-none xl:order-4">
+        <strong class="block font-display text-3xl font-medium tracking-[0.2em] text-gold xl:text-4xl">PARLA</strong>
+        <small class="block font-display text-[10px] tracking-[0.5em] text-gold-soft">JEWELRY</small>
+      </a>
 
+      <ul class="order-2 flex items-center gap-5 text-lg xl:order-2">
+        <li>
+          <a href="signup.html" aria-label="حساب کاربری" class="hover:text-gold">
+            <i class="fa-regular fa-user"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="سبد خرید" class="relative hover:text-gold">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
+        </li>
+      </ul>
 
-    <nav class="relative z-2 flex justify-between items-center p-3.75 text-white order-3 bg-olive-light gap-2.5 w-full xl:w-auto xl:gap-12.5 xl:bg-olive">
+      <form role="search" class="relative order-3 w-full xl:order-1 xl:w-72">
+        <input type="search" placeholder="جستجو..." class="h-9 w-full rounded-md bg-white/10 px-4 pl-10 text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-1 focus:ring-gold">
+        <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2 text-sm text-white/70"></i>
+      </form>
 
-        <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir hover:text-figure-shadow" href="index.html">خانه</a>
-        <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir hover:text-figure-shadow" href="#off">تخفیف ها</a>
-        <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir hover:text-figure-shadow" href="#product">محصولات</a>
-        <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir hover:text-figure-shadow" href="#about">درباره ما</a>
-        <a class="text-white whitespace-nowrap text-xs leading-1.25 xl:text-base xl:font-vazir hover:text-figure-shadow" href="contact.html">تماس با ما</a>
+      <nav class="order-4 w-full border-t border-white/15 pt-3 xl:order-3 xl:w-auto xl:border-t-0 xl:pt-0">
+        <ul class=" flex justify-center gap-6 text-tiny xl:text-base">
+          <li><a href="index.html" class="hover:text-gold">خانه</a></li>
+          <li><a href="#product" class="hover:text-gold">فروشگاه</a></li>
+          <li><a href="#category" class="hover:text-gold">دسته‌بندی‌ها</a></li>
+          <li><a href="#about" class="hover:text-gold">درباره ما</a></li>
+          <li><a href="contact.html" class="hover:text-gold">تماس با ما</a></li>
+        </ul>
+      </nav>
 
-    </nav>
-
-
-</header>
+    </section>
+  </header>
    
     <section class="overflow-hidden relative flex flex-col h-107.5 xl:h-162.5">
 

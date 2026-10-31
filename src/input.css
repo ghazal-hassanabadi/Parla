@@ -4,27 +4,22 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-olive: #55623d;
-  --color-olive-light: #6a7656;
-  --color-taupe-dark: #938b7c;
-  --color-taupe-light: #c2b8a7;
-  --color-mauve: #969185;
-  --color-welcome: #132001;
-  --color-figure-shadow: #454139;
-  --color-hero-overlay: #c6beb030;
-  --color-hero-btn-hover: aliceblue;
-  --color-cream: #f5efe3;
-  --color-tan: #bbad96;
-  --color-olive-dark: #627047;
-  --color-olive-hover: #69745a;
-  --color-taupe-hover: #b3a995;
-  --color-button: #6b7559;
-  --color-field-text: #3d3c3c;
-  --color-send-hover: #9b927e;
+  --color-forest: #444730;
+  --color-forest-deep: #3c3f2c;
+  --color-moss: #6f6d4b;
+  --color-olive: #5c5f42;
+  --color-olive-card: #4b4c34;
+  --color-gold: #e4bd82;
+  --color-gold-soft: #f0dcb8;
+  --color-paper: #faf8f5;
+  --color-sand: #f1ece6;
+  --color-stone: #d6cdbf;
+  --color-clay: #dccfc1;
+  --color-ink: #2b2b22;
 
-  --font-lalezar: "Lalezar", sans-serif;
+  /* فونت‌ها */
+  --font-display: "Cormorant Garamond", serif;
   --font-vazir: "Vazirmatn", sans-serif;
-  --font-playfair: "Playfair Display", serif;
 
   --text-tiny: 10px;
   --text-13: 13px;

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه | Parla</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="flex min-h-screen flex-col overflow-x-hidden bg-paper font-vazir text-ink">
+
+  <p class="bg-moss px-4 py-2 text-center text-xs text-gold-soft xl:text-sm">
+    <i class="fa-solid fa-truck-fast ml-2"></i>
+    ارسال رایگان برای خریدهای بالای ۱,۵۰۰,۰۰۰ تومان
+  </p>
+
+  <header class="bg-forest text-white">
+    <section class="mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-3 xl:grid xl:grid-cols-[1fr_auto_1fr] xl:items-center">
+
+      <div class="contents xl:order-1 xl:flex xl:items-center xl:justify-self-start xl:gap-6">
+
+        <ul class="order-2 flex items-center gap-5 text-lg xl:order-1">
+          <li>
+            <a href="signup.html" aria-label="حساب کاربری" class="hover:text-gold">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="سبد خرید" class="hover:text-gold">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
+        </ul>
+
+        <form role="search" class="relative order-3 w-full xl:order-2 xl:w-72">
+          <input type="search" placeholder="جستجو..." class="h-9 w-full rounded-md bg-white/10 px-4 pl-10 text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-1 focus:ring-gold">
+          <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2 text-sm text-white/70"></i>
+        </form>
+
+      </div>
+
+      <nav class="order-4 w-full border-t border-white/15 pt-3 xl:order-2 xl:w-auto xl:justify-self-center xl:border-t-0 xl:pt-0">
+        <ul class="flex justify-center gap-6 text-tiny xl:gap-8 xl:text-lg">
+          <li><a href="index.html" class="hover:text-gold">خانه</a></li>
+          <li><a href="product.html" class="text-gold">محصولات</a></li>
+          <li><a href="index.html#category" class="hover:text-gold">دسته‌بندی‌ها</a></li>
+          <li><a href="index.html#off" class="hover:text-gold">تخفیف‌ها</a></li>
+          <li><a href="contact.html" class="hover:text-gold">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="order-1 text-center leading-none xl:order-3 xl:justify-self-end">
+        <strong class="block font-display text-3xl font-medium tracking-[0.2em] text-gold xl:text-4xl">PARLA</strong>
+        <small class="block font-display text-tiny tracking-[0.5em] text-gold-soft">JEWELRY</small>
+      </a>
+
+    </section>
+  </header>
+
+  <main class="flex-1 px-4 py-10 xl:py-14">
+
+    <header class="mx-auto max-w-7xl">
+      <h1 class="mx-auto my-6 flex w-full max-w-3xl items-center gap-4 px-4">
+        <span class="h-px flex-1 bg-linear-to-r from-transparent to-olive"></span>
+        <span class="font-vazir text-xl whitespace-nowrap xl:text-3xl">محصولات پارلا</span>
+        <span class="h-px flex-1 -scale-x-100 bg-linear-to-r from-transparent to-olive"></span>
+      </h1>
+    </header>
+
+    <section class="mx-auto mt-8 flex max-w-7xl flex-col gap-6 xl:flex-row xl:items-start">
+
+      <ul class="grid flex-1 grid-cols-2 gap-3 md:grid-cols-3 xl:gap-5 2xl:grid-cols-4">
+
+        <li data-category="bracelet">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/m1-bracelet.jpg" alt="پک دستبند طلایی نازک" class="absolute inset-0 size-full object-cover">
+              <mark class="absolute top-2 right-2 rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-medium text-forest-deep">۲۰٪</mark>
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">پک دستبند طلایی نازک</h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3">
+              <del class="text-xs text-ink/50">۶۲۵٬۰۰۰</del>
+              <ins class="text-xs font-medium text-moss no-underline xl:text-sm">۵۰۰٬۰۰۰ تومان</ins>
+            </p>
+          </article>
+        </li>
+
+        <li data-category="watch">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/m2-watch.jpg" alt="ساعت طلایی صفحه مستطیل" class="absolute inset-0 size-full object-cover">
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">ساعت طلایی</h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3 text-xs font-medium text-moss xl:text-sm">۹۹۸٬۰۰۰ تومان</p>
+          </article>
+        </li>
+
+        <li data-category="necklace">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/m3-nec.jpg" alt="گردنبند طلایی" class="absolute inset-0 size-full object-cover">
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">گردنبند طلایی</h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3 text-xs font-medium text-moss xl:text-sm">۸۰۰٬۰۰۰ تومان</p>
+          </article>
+        </li>
+
+        <li data-category="earring">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/m4-earring.jpg" alt="گوشواره طرح قلب" class="absolute inset-0 size-full object-cover">
+              <mark class="absolute top-2 right-2 rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-medium text-forest-deep">۵۰٪</mark>
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">گوشواره طرح قلب</h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3">
+              <del class="text-xs text-ink/50">۸۰۰٬۰۰۰</del>
+              <ins class="text-xs font-medium text-moss no-underline xl:text-sm">۴۰۰٬۰۰۰ تومان</ins>
+            </p>
+          </article>
+        </li>
+
+        <li data-category="earring">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/m5-earring2.jpg" alt="پک پیرسینگ و گوشواره حلقه" class="absolute inset-0 size-full object-cover">
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">پک پیرسینگ و گوشواره</h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3 text-xs font-medium text-moss xl:text-sm">۹۵۰٬۰۰۰ تومان</p>
+          </article>
+        </li>
+
+        <li data-category="set">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/m6-watch2.jpg" alt="ست دستبند و ساعت طلایی" class="absolute inset-0 size-full object-cover">
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">ست دستبند و ساعت</h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3 text-xs font-medium text-moss xl:text-sm">۱٬۲۵۰٬۰۰۰ تومان</p>
+          </article>
+        </li>
+
+        <li data-category="set">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/p10.png" alt="گردنبند دوتیکه   " class="absolute inset-0 size-full object-cover">
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">گردنبند دوتیکه   </h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3 text-xs font-medium text-moss xl:text-sm">۱٬۵۰۰٬۰۰۰ تومان</p>
+          </article>
+        </li>
+
+        <li data-category="bracelet">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/p4.png" alt="دستبند مرواریدی " class="absolute inset-0 size-full object-cover">
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">دستبند مرواریدی</h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3 text-xs font-medium text-moss xl:text-sm">۳۹۸٬۰۰۰ تومان</p>
+          </article>
+        </li>
+
+        <li data-category="bracelet">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/p5.png" alt="دستبند سنگ    " class="absolute inset-0 size-full object-cover">
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">دستبند سنگ   </h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3 text-xs font-medium text-moss xl:text-sm">۳۹۸٬۰۰۰ تومان</p>
+          </article>
+        </li>
+
+        <li data-category="watch">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/p7.png" alt="ساعت بند کرمی" class="absolute inset-0 size-full object-cover">
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">ساعت بند کرمی</h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3 text-xs font-medium text-moss xl:text-sm">۹۹۸٬۰۰۰ تومان</p>
+          </article>
+        </li>
+
+        <li data-category="earring">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/p11.png" alt="گوشواره حلقه " class="absolute inset-0 size-full object-cover">
+              <mark class="absolute top-2 right-2 rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-medium text-forest-deep">۵۱٪</mark>
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">گوشواره حلقه </h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3">
+              <del class="text-xs text-ink/50">۶۵۰٬۰۰۰</del>
+              <ins class="text-xs font-medium text-moss no-underline xl:text-sm">۳۲۰٬۰۰۰ تومان</ins>
+            </p>
+          </article>
+        </li>
+
+        <li data-category="ring">
+          <article class="h-full overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
+            <figure class="relative aspect-4/5 overflow-hidden bg-clay">
+              <img src="image/p12.png" alt="انگشتر  " class="absolute inset-0 size-full object-cover">
+              <mark class="absolute top-2 right-2 rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-medium text-forest-deep">۴۹٪</mark>
+              <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </figure>
+            <h2 class="mt-3 h-10 overflow-hidden px-3 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">انگشتر  </h2>
+            <p class="flex min-h-12 flex-col justify-end px-3 pb-3">
+              <del class="text-xs text-ink/50">۵۹۰٬۰۰۰</del>
+              <ins class="text-xs font-medium text-moss no-underline xl:text-sm">۳۰۰٬۰۰۰ تومان</ins>
+            </p>
+          </article>
+        </li>
+
+      </ul>
+
+      <aside aria-label="فیلترها" class="order-first rounded-xl border border-stone bg-white/50 p-5 xl:sticky xl:top-4 xl:order-none xl:w-72 xl:shrink-0">
+
+        <h2 class="mb-4 flex items-center gap-2 font-medium">
+          <i class="fa-solid fa-sliders text-moss"></i>
+          فیلترها
+        </h2>
+
+        <form data-filter-form class="grid grid-cols-2 gap-x-5 gap-y-4 xl:flex xl:flex-col">
+
+          <fieldset class="col-span-2 min-w-0">
+            <legend class="mb-3 text-sm font-medium">دسته‌بندی</legend>
+            <ul class="flex flex-col gap-2.5 text-sm">
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="category" value="all" checked class="size-4 accent-olive-card">همه محصولات<small class="ms-auto text-ink/50">(۱۲)</small></label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="category" value="necklace" class="size-4 accent-olive-card">گردنبند<small class="ms-auto text-ink/50">(۱)</small></label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="category" value="ring" class="size-4 accent-olive-card">انگشتر<small class="ms-auto text-ink/50">(۱)</small></label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="category" value="bracelet" class="size-4 accent-olive-card">دستبند<small class="ms-auto text-ink/50">(۳)</small></label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="category" value="earring" class="size-4 accent-olive-card">گوشواره<small class="ms-auto text-ink/50">(۳)</small></label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="category" value="watch" class="size-4 accent-olive-card">ساعت<small class="ms-auto text-ink/50">(۲)</small></label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="category" value="set" class="size-4 accent-olive-card">ست<small class="ms-auto text-ink/50">(۲)</small></label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="col-span-2 min-w-0 border-t border-stone/60 pt-4">
+            <legend class="mb-3 text-sm font-medium">قیمت</legend>
+
+            <p class="relative block h-5">
+              <span aria-hidden="true" class="absolute top-1/2 right-0 left-0 h-0.5 -translate-y-1/2 rounded bg-olive-card/40"></span>
+              <input type="range" name="price-min" min="0" max="1500000" step="10000" value="0" aria-label="حداقل قیمت" class="pointer-events-none absolute inset-0 size-full appearance-none bg-transparent [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:size-4 [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:bg-olive-card [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:size-4 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-olive-card">
+              <input type="range" name="price-max" min="0" max="1500000" step="10000" value="1500000" aria-label="حداکثر قیمت" class="pointer-events-none absolute inset-0 size-full appearance-none bg-transparent [&::-moz-range-thumb]:pointer-events-auto [&::-moz-range-thumb]:size-4 [&::-moz-range-thumb]:cursor-pointer [&::-moz-range-thumb]:rounded-full [&::-moz-range-thumb]:border-0 [&::-moz-range-thumb]:bg-olive-card [&::-webkit-slider-thumb]:pointer-events-auto [&::-webkit-slider-thumb]:size-4 [&::-webkit-slider-thumb]:cursor-pointer [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:rounded-full [&::-webkit-slider-thumb]:bg-olive-card">
+            </p>
+
+            <p class="mt-2 flex justify-between text-xs text-ink/70">
+              <output data-price-min-label>۰ تومان</output>
+              <output data-price-max-label>۱٬۵۰۰٬۰۰۰ تومان</output>
+            </p>
+          </fieldset>
+
+          <fieldset class="min-w-0 border-t border-stone/60 pt-4">
+            <legend class="mb-3 text-sm font-medium">جنس</legend>
+            <ul class="flex flex-col gap-2.5 text-sm">
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="material" value="gold18" class="size-4 accent-olive-card"> سنگ</label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="material" value="gold-plated" class="size-4 accent-olive-card">مروارید  </label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="material" value="silver" class="size-4 accent-olive-card">نقره</label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="material" value="steel" class="size-4 accent-olive-card">استیل ضدزنگ</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="min-w-0 border-t border-stone/60 pt-4">
+            <legend class="mb-3 text-sm font-medium">مناسبت</legend>
+            <ul class="flex flex-col gap-2.5 text-sm">
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="occasion" value="daily" class="size-4 accent-olive-card">روزمره</label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="occasion" value="party" class="size-4 accent-olive-card">مهمانی</label></li>
+              <li><label class="flex cursor-pointer items-center gap-2"><input type="checkbox" name="occasion" value="gift" class="size-4 accent-olive-card">هدیه</label></li>
+            </ul>
+          </fieldset>
+
+          <button type="submit" class="col-span-2 h-11 w-full cursor-pointer rounded-md bg-olive-card text-sm text-white transition hover:bg-forest">اعمال فیلترها</button>
+
+          <button type="reset" class="col-span-2 flex cursor-pointer items-center justify-center gap-2 text-xs text-ink/70 hover:text-ink">
+            <i class="fa-solid fa-rotate-left"></i>
+            حذف همه فیلترها
+          </button>
+
+        </form>
+
+      </aside>
+
+    </section>
+
+  </main>
+
+  <footer class="bg-forest-deep text-white/80">
+
+    <section class="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-8 px-6 py-10 xl:grid-cols-4 xl:gap-12 xl:px-12 xl:py-14">
+
+      <article class="col-span-2 text-center xl:col-span-1 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">اطلاعات تماس</h2>
+        <address class="not-italic">
+          <ul class="flex flex-col gap-3 text-sm leading-relaxed">
+            <li class="flex items-start justify-center gap-2 xl:justify-start">
+              <i class="fa-solid fa-location-dot mt-1.5 text-gold"></i>
+              تهران، خیابان ولیعصر، کوچه بهار، پلاک ۲۴
+            </li>
+            <li class="flex items-center justify-center gap-2 xl:justify-start">
+              <i class="fa-solid fa-phone text-gold"></i>
+              <a href="tel:78904432" class="hover:text-gold">۷۸۹۰۴۴۳۲</a>
+            </li>
+            <li class="flex items-center justify-center gap-2 xl:justify-start">
+              <i class="fa-regular fa-envelope text-gold"></i>
+              <a href="mailto:info@parla.com" class="hover:text-gold">info@parla.com</a>
+            </li>
+          </ul>
+        </address>
+      </article>
+
+      <nav aria-label="راهنمای خرید" class="border-t border-white/10 pt-6 text-center xl:border-t-0 xl:pt-0 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">راهنمای خرید</h2>
+        <ul class="flex flex-col gap-3 text-sm">
+          <li><a href="#" class="hover:text-gold">سوالات متداول</a></li>
+          <li><a href="#" class="hover:text-gold">شرایط و قوانین</a></li>
+          <li><a href="#" class="hover:text-gold">حریم خصوصی</a></li>
+          <li><a href="#" class="hover:text-gold">روش‌های پرداخت</a></li>
+          <li><a href="#" class="hover:text-gold">پیگیری سفارش</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="دسترسی سریع" class="border-t border-white/10 pt-6 text-center xl:border-t-0 xl:pt-0 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">دسترسی سریع</h2>
+        <ul class="flex flex-col gap-3 text-sm">
+          <li><a href="index.html" class="hover:text-gold">خانه</a></li>
+          <li><a href="product.html" class="hover:text-gold">فروشگاه</a></li>
+          <li><a href="index.html#category" class="hover:text-gold">دسته‌بندی‌ها</a></li>
+          <li><a href="index.html#off" class="hover:text-gold">تخفیف‌ها</a></li>
+          <li><a href="contact.html" class="hover:text-gold">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <article class="col-span-2 border-t border-white/10 pt-6 text-center xl:col-span-1 xl:border-t-0 xl:pt-0 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">درباره پارلا</h2>
+        <p class="mx-auto max-w-xs text-sm leading-loose xl:mx-0 xl:max-w-none">
+          پارلا، جایی که زیبایی و ظرافت در هر جزئیاتی دیده می‌شود. ما با عشق، استایل شما را کامل می‌کنیم.
+        </p>
+        <ul class="mt-5 flex justify-center gap-3 xl:justify-start">
+          <li>
+            <a href="https://instagram.com/parla-accessories" target="_blank" rel="noopener" aria-label="اینستاگرام" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="تلگرام" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="واتساپ" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+    </section>
+
+    <p class="border-t border-white/15 px-4 py-4 text-center">
+      <small class="text-xs">© تمامی حقوق این سایت متعلق به پارلا است.</small>
+    </p>
+
+  </footer>
+
+</body>
+</html>

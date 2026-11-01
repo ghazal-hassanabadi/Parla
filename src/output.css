@@ -314,6 +314,9 @@
   .col-start-2 {
     grid-column-start: 2;
   }
+  .row-span-2 {
+    grid-row: span 2 / span 2;
+  }
   .row-start-1 {
     grid-row-start: 1;
   }
@@ -664,6 +667,9 @@
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+  .grid-cols-\[auto_1fr\] {
+    grid-template-columns: auto 1fr;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -745,6 +751,9 @@
   .gap-x-1\.25 {
     column-gap: calc(var(--spacing) * 1.25);
   }
+  .gap-x-3 {
+    column-gap: calc(var(--spacing) * 3);
+  }
   .gap-x-4 {
     column-gap: calc(var(--spacing) * 4);
   }
@@ -790,6 +799,9 @@
   }
   .justify-self-center {
     justify-self: center;
+  }
+  .justify-self-start {
+    justify-self: flex-start;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -1332,6 +1344,13 @@
   .after\:z-\[1\]::after {
     content: var(--tw-content);
     z-index: 1;
+  }
+  .after\:bg-black\/25::after {
+    content: var(--tw-content);
+    background-color: color-mix(in srgb, #000 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 25%, transparent);
+    }
   }
   .after\:bg-linear-to-r::after {
     content: var(--tw-content);
@@ -1977,11 +1996,21 @@
     .xl\:rounded-2xl {
       border-radius: var(--radius-2xl);
     }
+    .xl\:rounded-md {
+      border-radius: var(--radius-md);
+    }
     .xl\:rounded-none {
       border-radius: 0;
     }
     .xl\:rounded-sm {
       border-radius: var(--radius-sm);
+    }
+    .xl\:rounded-xl {
+      border-radius: var(--radius-xl);
+    }
+    .xl\:border {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
     }
     .xl\:border-0 {
       border-style: var(--tw-border-style);
@@ -1994,6 +2023,14 @@
     .xl\:border-t-0 {
       border-top-style: var(--tw-border-style);
       border-top-width: 0px;
+    }
+    .xl\:border-gold\/60 {
+      border-color: color-mix(in srgb, #e4bd82 60%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .xl\:border-gold\/60 {
+        border-color: color-mix(in oklab, var(--color-gold) 60%, transparent);
+      }
     }
     .xl\:border-stone {
       border-color: var(--color-stone);
@@ -2046,6 +2083,9 @@
     .xl\:px-8 {
       padding-inline: calc(var(--spacing) * 8);
     }
+    .xl\:px-10 {
+      padding-inline: calc(var(--spacing) * 10);
+    }
     .xl\:px-12 {
       padding-inline: calc(var(--spacing) * 12);
     }
@@ -2063,6 +2103,9 @@
     }
     .xl\:py-2\.5 {
       padding-block: calc(var(--spacing) * 2.5);
+    }
+    .xl\:py-3 {
+      padding-block: calc(var(--spacing) * 3);
     }
     .xl\:py-6 {
       padding-block: calc(var(--spacing) * 6);
@@ -2090,6 +2133,9 @@
     }
     .xl\:pb-16 {
       padding-bottom: calc(var(--spacing) * 16);
+    }
+    .xl\:text-center {
+      text-align: center;
     }
     .xl\:text-right {
       text-align: right;
@@ -2179,9 +2225,47 @@
         color: color-mix(in oklab, var(--color-white) 80%, transparent);
       }
     }
+    .xl\:after\:bg-linear-to-r::after {
+      content: var(--tw-content);
+      --tw-gradient-position: to right;
+      @supports (background-image: linear-gradient(in lab, red, red)) {
+        --tw-gradient-position: to right in oklab;
+      }
+      background-image: linear-gradient(var(--tw-gradient-stops));
+    }
+    .xl\:after\:from-forest-deep\/80::after {
+      content: var(--tw-content);
+      --tw-gradient-from: color-mix(in srgb, #3c3f2c 80%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-gradient-from: color-mix(in oklab, var(--color-forest-deep) 80%, transparent);
+      }
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
+    .xl\:after\:via-forest-deep\/40::after {
+      content: var(--tw-content);
+      --tw-gradient-via: color-mix(in srgb, #3c3f2c 40%, transparent);
+      @supports (color: color-mix(in lab, red, red)) {
+        --tw-gradient-via: color-mix(in oklab, var(--color-forest-deep) 40%, transparent);
+      }
+      --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+      --tw-gradient-stops: var(--tw-gradient-via-stops);
+    }
+    .xl\:after\:to-transparent::after {
+      content: var(--tw-content);
+      --tw-gradient-to: transparent;
+      --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+    }
     .xl\:first\:border-s-0:first-child {
       border-inline-start-style: var(--tw-border-style);
       border-inline-start-width: 0px;
+    }
+    @media (hover: hover) {
+      .xl\:hover\:bg-gold:hover {
+        background-color: var(--color-gold);
+      }
+      .xl\:hover\:text-forest-deep:hover {
+        color: var(--color-forest-deep);
+      }
     }
   }
   .\[\&\:\:-webkit-scrollbar\]\:hidden::-webkit-scrollbar {

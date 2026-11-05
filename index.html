@@ -68,7 +68,7 @@
     </section>
   </header>
    
-    <section class="relative flex h-96 items-center justify-end overflow-hidden px-6 after:absolute after:inset-0 after:z-[1] after:bg-black/25 xl:h-112 xl:px-24">
+    <section class="relative flex h-96 items-center justify-end overflow-hidden px-6 after:absolute after:inset-0 after:z-1 after:bg-black/25 xl:h-112 xl:px-24">
 
     <picture>
       <source media="(max-width: 600px)" srcset="image/mobile.jpg">
@@ -78,7 +78,7 @@
     <article class="relative z-10 w-full max-w-md text-white xl:max-w-lg">
       <hgroup>
         <p class="text-19 xl:text-3xl">زیبایی در جزئیات</p>
-        <h1 class="font-display text-5xl font-medium tracking-[0.1em] text-gold xl:text-7xl">PARLA</h1>
+        <h1 class="font-display text-5xl font-medium tracking-widest text-gold xl:text-7xl">PARLA</h1>
       </hgroup>
       <p class="mt-3 text-sm text-white/90 xl:mt-4 xl:text-xl">جواهراتی برای لحظاتی که می‌درخشید</p>
       <button href="#product" class=" mt-6 inline-flex items-center gap-3 rounded-md bg-olive px-6 py-2.5 text-sm hover:bg-forest xl:text-base">
@@ -170,7 +170,7 @@
 
   <section id="off" class="py-6 xl:-mt-12 xl:pb-10">
 
-    <article class="relative mx-4 flex items-center gap-3 overflow-hidden rounded-2xl border border-gold/40 bg-olive-card bg-[url('../image/leaf-left.png'),url('../image/leaf-right.png')] bg-[position:left_bottom,right_top] bg-[size:auto_35%,auto_38%] bg-no-repeat px-[7%] pt-6 pb-9 text-white xl:mx-auto xl:h-120 xl:max-w-360 xl:gap-10 xl:overflow-visible xl:rounded-none xl:border-0 xl:bg-transparent xl:bg-[url('../image/bg-collection.png')] xl:bg-[position:center] xl:bg-[size:cover] xl:px-[19%] xl:pt-0 xl:pb-5">
+    <article class="relative mx-4 flex items-center gap-3 overflow-hidden rounded-2xl border border-gold/40 bg-olive-card bg-leaves px-gutter pt-6 pb-9 text-white xl:mx-auto xl:h-120 xl:max-w-360 xl:gap-10 xl:overflow-visible xl:rounded-none xl:border-0 xl:bg-transparent xl:bg-collection xl:px-gutter-wide xl:pt-0 xl:pb-5">
 
       <header class="w-[36%] shrink-0 text-right xl:w-auto xl:flex-1 xl:shrink">
         <p class="hidden text-gold xl:block">تخفیف‌ها</p>
@@ -182,8 +182,8 @@
         </a>
       </header>
 
-      <ul data-slider class="flex min-w-0 flex-1 snap-x snap-mandatory gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden xl:flex-[2] xl:gap-3 xl:overflow-visible">
-        <li class="shrink-0 basis-[48%] snap-start xl:shrink xl:flex-1 xl:basis-auto">
+      <ul data-slider class="no-scrollbar flex min-w-0 flex-1 snap-x snap-mandatory gap-2 overflow-x-auto xl:flex-4 xl:gap-3 xl:overflow-visible">
+        <li class="shrink-0 basis-12/25 snap-start xl:shrink xl:flex-1 xl:basis-auto">
           <img src="image/collection1.png" alt="گوشواره آویز" class="aspect-4/5 w-full rounded-xl object-cover xl:aspect-auto xl:h-60 xl:rounded-2xl">
         </li>
         <li class="shrink-0 basis-[48%] snap-start xl:shrink xl:flex-1 xl:basis-auto">
@@ -382,7 +382,7 @@
 <section class="px-4 py-6 xl:py-10">
   <ul class="mx-auto flex max-w-7xl flex-col gap-3 xl:flex-row xl:gap-5">
 
-    <li class="order-3 xl:order-none xl:flex-1">
+    <li class="order-3 xl:order-0 xl:flex-1">
       <a href="#" class="group flex h-full items-center justify-between gap-3 overflow-hidden rounded-xl border border-stone/60 bg-white/60 p-4 xl:min-h-44 xl:border-0 xl:bg-olive-card xl:p-6 xl:text-white">
         <div>
           <h3 class="text-sm font-medium xl:text-xl xl:text-gold">راهنمای سایز انگشتر</h3>
@@ -395,7 +395,7 @@
       </a>
     </li>
 
-    <li class="order-2 xl:order-none xl:flex-1">
+    <li class="order-2 xl:order-0 xl:flex-1">
       <a href="#" class="group flex h-full items-center justify-between gap-3 overflow-hidden rounded-xl border border-stone/60 bg-white/60 p-4 xl:min-h-44 xl:p-6">
         <div>
           <h3 class="text-sm font-medium xl:text-xl">باشگاه مشتریان</h3>
@@ -408,7 +408,7 @@
       </a>
     </li>
 
-    <li class="order-1 xl:order-none xl:flex-1">
+    <li class="order-1 xl:order-0 xl:flex-1">
       <a href="#" class="group flex h-full items-center justify-between gap-3 overflow-hidden rounded-xl border border-stone/60 bg-sand p-4 xl:min-h-44 xl:p-6">
         <div>
           <h3 class="text-sm font-medium xl:text-xl">بسته‌بندی لوکس</h3>

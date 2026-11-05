@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant current (&[aria-current="true"]);
 
 @theme {
   --color-forest: #444730;
@@ -35,48 +35,31 @@
   --text-44: 44px;
   --text-display: 40px;
   --text-hero-title: 50px;
+
+  --spacing-gutter: 7%;
+  --spacing-gutter-wide: 19%;
 }
 
-/*  Dark Mode: */
-/* ===== Dark Mode: نیمه‌تیره، زیتونیِ برند، کارت‌های روشن ===== */
-/* ===== Dark Mode: همه از یک خانواده (زیتونیِ برند) ===== */
-.dark {
-  color-scheme: dark;
 
-  --color-mauve: #22251b;          /* زمینهٔ صفحه: زیتونیِ خیلی تیره */
+@utility no-scrollbar {
+  scrollbar-width: none;
 
-  --color-olive: #3a4529;          /* بخش‌های بزرگ و هدر */
-  --color-olive-light: #44502f;
-  --color-olive-dark: #4f5d36;     /* عنوان پلن‌ها */
-  --color-olive-hover: #313a24;
-
-  --color-taupe-dark: #1a1c14;     /* نوار خوش‌آمد و فوتر */
-  --color-taupe-light: #9d9884;    /* کارت‌ها: کرمِ مایل به زیتونی */
-  --color-taupe-hover: #b8b29d;
-  --color-tan: #868271;            /* کارت پلن‌ها */
-
-  --color-cream: #d6d1bb;
-  --color-button: #3d4729;
-  --color-send-hover: #4a5538;
-
-  --color-welcome: #d9d3bd;
-  --color-figure-shadow: #e4d9b0;
-  --color-hero-overlay: #14150f55;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
-/* متن پیش‌فرض */
-.dark body { color: #e8e2d2; }
+@utility bg-leaves {
+  background-image: url('../image/leaf-left.png'), url('../image/leaf-right.png');
+  background-position: left bottom, right top;
+  background-size: auto 35%, auto 38%;
+  background-repeat: no-repeat;
+}
 
-/* روی کارت‌های روشن متن تیره */
-.dark .bg-taupe-light,
-.dark .bg-tan { color: #1a1a14; }
+@utility bg-collection {
+  background-image: url('../image/bg-collection.png');
+  background-position: center;
+  background-size: cover;
+}
 
-.dark footer { color: #e6e0cf; }
-
-/* فیلدهای فرم */
-.dark :is(input, textarea) { color: #1f1f1a; }
-
-/* عنوان و دکمهٔ پلن‌ها و دکمه‌های فرم */
-.dark article h3,
-.dark article button,
-.dark .bg-button { color: #f1ecdc; }
+@custom-variant current (&[aria-current="true"]);

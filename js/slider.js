@@ -1,4 +1,4 @@
-(() => {
+export function initSlider() {
   const slider = document.querySelector('[data-slider]');
   const dotsBox = document.querySelector('[data-slider-dots]');
   if (!slider) return;
@@ -73,6 +73,13 @@
     paint();
   };
 
+  const setup = () => {
+    stop();
+    measure();
+    buildDots();
+    start();
+  };
+
   slider.addEventListener('scroll', () => {
     clearTimeout(scrollTimer);
     scrollTimer = setTimeout(() => {
@@ -92,16 +99,11 @@
     document.hidden ? stop() : start();
   });
 
-  window.addEventListener('resize', () => {
-    stop();
-    measure();
-    buildDots();
-    start();
-  });
+  window.addEventListener('resize', setup);
 
-  window.addEventListener('load', () => {
-    measure();
-    buildDots();
-    start();
-  });
-})();
+  if (document.readyState === 'complete') {
+    setup();
+  } else {
+    window.addEventListener('load', setup);
+  }
+}

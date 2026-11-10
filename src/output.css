@@ -1594,11 +1594,20 @@
     .xl\:h-60 {
       height: calc(var(--spacing) * 60);
     }
+    .xl\:h-100 {
+      height: calc(var(--spacing) * 100);
+    }
     .xl\:h-112 {
       height: calc(var(--spacing) * 112);
     }
     .xl\:h-120 {
       height: calc(var(--spacing) * 120);
+    }
+    .xl\:h-130 {
+      height: calc(var(--spacing) * 130);
+    }
+    .xl\:h-160 {
+      height: calc(var(--spacing) * 160);
     }
     .xl\:h-full {
       height: 100%;
@@ -1626,6 +1635,9 @@
     }
     .xl\:max-w-4xl {
       max-width: var(--container-4xl);
+    }
+    .xl\:max-w-20 {
+      max-width: calc(var(--spacing) * 20);
     }
     .xl\:max-w-360 {
       max-width: calc(var(--spacing) * 360);

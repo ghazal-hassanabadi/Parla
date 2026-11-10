@@ -6,6 +6,12 @@ import { initFilter } from './filter.js';
 import { initAddToCart } from './cart/add-to-cart.js';
 import { initCartPage } from './cart/cart-page.js';
 import { updateCartBadge } from './cart/badge.js';
+import { initSteps } from './checkout/steps.js';
+import { initAddress } from './checkout/address.js';
+import { initSelect } from './checkout/select.js';
+import { initShipping } from './checkout/shipping.js';
+import { initPayment } from './checkout/payment.js';
+import { initSuccess } from './checkout/success.js';
 
 
 initSlider();
@@ -16,3 +22,9 @@ initFilter();
 initAddToCart();
 initCartPage();
 updateCartBadge();
+initSteps();
+initSelect();
+initAddress();
+initShipping();
+initPayment();
+initSuccess();

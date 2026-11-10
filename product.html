@@ -32,8 +32,8 @@
             </a>
           </li>
           <li>
-            <a href="#" aria-label="سبد خرید" class="hover:text-gold">
-              <i class="fa-solid fa-bag-shopping"></i>
+            <a href="cart.html" aria-label="سبد خرید" class="relative hover:text-gold">
+              <i class="fa-solid fa-bag-shopping"></i><span data-cart-count hidden class="absolute -top-2 -right-2 grid size-4 place-items-center rounded-full bg-gold text-tiny font-medium text-forest-deep"></span>
             </a>
           </li>
         </ul>
@@ -80,9 +80,9 @@
   <li data-category="bracelet">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/m1-bracelet.jpg" alt="پک دستبند طلایی نازک" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/m1-bracelet.jpg" alt="پک دستبند طلایی نازک" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
         <mark class="absolute top-2 right-2 rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-medium text-forest-deep">۲۰٪</mark>
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -91,24 +91,24 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">پک دستبند طلایی نازک</a>
+        <a href="product-detail.html" class="hover:text-moss">پک دستبند طلایی نازک</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2">
         <del class="text-xs text-ink/50">۶۲۵٬۰۰۰</del>
         <ins class="text-xs font-medium text-moss no-underline xl:text-sm">۵۰۰٬۰۰۰ تومان</ins>
       </p>
-      <button type="button" aria-label="افزودن پک دستبند طلایی نازک به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن پک دستبند طلایی نازک به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="watch">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/m2-watch.jpg" alt="ساعت طلایی صفحه مستطیل" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/m2-watch.jpg" alt="ساعت طلایی صفحه مستطیل" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -117,21 +117,21 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">ساعت طلایی</a>
+        <a href="product-detail.html" class="hover:text-moss">ساعت طلایی</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2 text-xs font-medium text-moss xl:text-sm">۹۹۸٬۰۰۰ تومان</p>
-      <button type="button" aria-label="افزودن ساعت طلایی به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن ساعت طلایی به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="necklace">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/m3-nec.jpg" alt="گردنبند طلایی" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/m3-nec.jpg" alt="گردنبند طلایی" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -140,22 +140,22 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">گردنبند طلایی</a>
+        <a href="product-detail.html" class="hover:text-moss">گردنبند طلایی</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2 text-xs font-medium text-moss xl:text-sm">۸۰۰٬۰۰۰ تومان</p>
-      <button type="button" aria-label="افزودن گردنبند طلایی به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن گردنبند طلایی به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="earring">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/m4-earring.jpg" alt="گوشواره طرح قلب" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/m4-earring.jpg" alt="گوشواره طرح قلب" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
         <mark class="absolute top-2 right-2 rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-medium text-forest-deep">۵۰٪</mark>
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -164,24 +164,24 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">گوشواره طرح قلب</a>
+        <a href="product-detail.html" class="hover:text-moss">گوشواره طرح قلب</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2">
         <del class="text-xs text-ink/50">۸۰۰٬۰۰۰</del>
         <ins class="text-xs font-medium text-moss no-underline xl:text-sm">۴۰۰٬۰۰۰ تومان</ins>
       </p>
-      <button type="button" aria-label="افزودن گوشواره طرح قلب به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن گوشواره طرح قلب به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="earring">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/m5-earring2.jpg" alt="پک پیرسینگ و گوشواره حلقه" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/m5-earring2.jpg" alt="پک پیرسینگ و گوشواره حلقه" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -190,21 +190,21 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">پک پیرسینگ و گوشواره</a>
+        <a href="product-detail.html" class="hover:text-moss">پک پیرسینگ و گوشواره</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2 text-xs font-medium text-moss xl:text-sm">۹۵۰٬۰۰۰ تومان</p>
-      <button type="button" aria-label="افزودن پک پیرسینگ و گوشواره به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن پک پیرسینگ و گوشواره به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="set">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/m6-watch2.jpg" alt="ست دستبند و ساعت طلایی" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/m6-watch2.jpg" alt="ست دستبند و ساعت طلایی" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -213,21 +213,21 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">ست دستبند و ساعت</a>
+        <a href="product-detail.html" class="hover:text-moss">ست دستبند و ساعت</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2 text-xs font-medium text-moss xl:text-sm">۱٬۲۵۰٬۰۰۰ تومان</p>
-      <button type="button" aria-label="افزودن ست دستبند و ساعت به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن ست دستبند و ساعت به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="set">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/p10.png" alt="گردنبند دوتیکه" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/p10.png" alt="گردنبند دوتیکه" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -236,21 +236,21 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">گردنبند دوتیکه</a>
+        <a href="product-detail.html" class="hover:text-moss">گردنبند دوتیکه</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2 text-xs font-medium text-moss xl:text-sm">۱٬۵۰۰٬۰۰۰ تومان</p>
-      <button type="button" aria-label="افزودن گردنبند دوتیکه به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن گردنبند دوتیکه به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="bracelet">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/p4.png" alt="دستبند مرواریدی" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/p4.png" alt="دستبند مرواریدی" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -259,21 +259,21 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">دستبند مرواریدی</a>
+        <a href="product-detail.html" class="hover:text-moss">دستبند مرواریدی</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2 text-xs font-medium text-moss xl:text-sm">۳۹۸٬۰۰۰ تومان</p>
-      <button type="button" aria-label="افزودن دستبند مرواریدی به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن دستبند مرواریدی به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="bracelet">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/p5.png" alt="دستبند سنگ" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/p5.png" alt="دستبند سنگ" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -282,21 +282,21 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">دستبند سنگ</a>
+        <a href="product-detail.html" class="hover:text-moss">دستبند سنگ</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2 text-xs font-medium text-moss xl:text-sm">۳۹۸٬۰۰۰ تومان</p>
-      <button type="button" aria-label="افزودن دستبند سنگ به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن دستبند سنگ به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="watch">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/p7.png" alt="ساعت بند کرمی" class="absolute inset-0 size-full object-cover grayscale">
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/p7.png" alt="ساعت بند کرمی" class="absolute inset-0 size-full object-cover grayscale"></a>
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex items-center justify-center gap-2 bg-ink/80 py-2 text-xs text-white">
@@ -305,7 +305,7 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">ساعت بند کرمی</a>
+        <a href="product-detail.html" class="hover:text-moss">ساعت بند کرمی</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2 text-xs font-medium text-moss xl:text-sm">۹۹۸٬۰۰۰ تومان</p>
       <button type="button" disabled aria-label="ساعت بند کرمی ناموجود است" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-not-allowed items-center justify-center gap-2 rounded-md bg-stone py-1.5 text-[11px] text-ink/50 xl:text-sm">
@@ -317,9 +317,9 @@
   <li data-category="earring">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/p11.png" alt="گوشواره حلقه" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/p11.png" alt="گوشواره حلقه" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
         <mark class="absolute top-2 right-2 rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-medium text-forest-deep">۵۱٪</mark>
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -328,25 +328,25 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">گوشواره حلقه</a>
+        <a href="product-detail.html" class="hover:text-moss">گوشواره حلقه</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2">
         <del class="text-xs text-ink/50">۶۵۰٬۰۰۰</del>
         <ins class="text-xs font-medium text-moss no-underline xl:text-sm">۳۲۰٬۰۰۰ تومان</ins>
       </p>
-      <button type="button" aria-label="افزودن گوشواره حلقه به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن گوشواره حلقه به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 
   <li data-category="ring">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-lg border border-stone/60 bg-white/60 transition duration-300 hover:-translate-y-1 hover:shadow-md">
       <figure class="relative aspect-4/5 overflow-hidden bg-clay">
-        <img src="image/p12.png" alt="انگشتر" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110">
+        <a href="product-detail.html" tabindex="-1" aria-hidden="true" class="absolute inset-0"><img src="image/p12.png" alt="انگشتر" class="absolute inset-0 size-full object-cover transition duration-500 group-hover:scale-110"></a>
         <mark class="absolute top-2 right-2 rounded-full bg-gold px-2.5 py-0.5 text-[11px] font-medium text-forest-deep">۴۹٪</mark>
-        <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
+        <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="absolute top-2 left-2 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-white/80 text-sm text-forest hover:text-gold">
           <i class="fa-regular fa-heart" aria-hidden="true"></i>
         </button>
         <figcaption class="pointer-events-none absolute inset-x-0 bottom-0 flex translate-y-full items-center justify-center gap-2 bg-forest-deep/80 py-2 text-xs text-white transition duration-300 group-hover:translate-y-0 group-focus-within:translate-y-0">
@@ -355,16 +355,16 @@
         </figcaption>
       </figure>
       <h2 class="mt-3 h-10 overflow-hidden px-4 text-sm leading-5 xl:h-12 xl:text-base xl:leading-6">
-        <a href="product-detail.html" class="hover:text-moss after:absolute after:inset-0">انگشتر</a>
+        <a href="product-detail.html" class="hover:text-moss">انگشتر</a>
       </h2>
       <p class="flex min-h-12 flex-col justify-end px-4 pb-2">
         <del class="text-xs text-ink/50">۵۹۰٬۰۰۰</del>
         <ins class="text-xs font-medium text-moss no-underline xl:text-sm">۳۰۰٬۰۰۰ تومان</ins>
       </p>
-      <button type="button" aria-label="افزودن انگشتر به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
+      <a href="product-detail.html" aria-label="افزودن انگشتر به سبد خرید" class="relative z-10 mx-4 mt-auto mb-4 flex cursor-pointer items-center justify-center gap-2 rounded-md bg-olive py-1.5 text-[11px] text-white transition hover:bg-forest xl:text-sm">
         <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
         افزودن به سبد
-      </button>
+      </a>
     </article>
   </li>
 

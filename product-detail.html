@@ -28,8 +28,8 @@
             </a>
           </li>
           <li>
-            <a href="#" aria-label="سبد خرید" class="hover:text-gold">
-              <i class="fa-solid fa-bag-shopping"></i>
+            <a href="cart.html" aria-label="سبد خرید" class="relative hover:text-gold">
+              <i class="fa-solid fa-bag-shopping"></i><span data-cart-count hidden class="absolute -top-2 -right-2 grid size-4 place-items-center rounded-full bg-gold text-tiny font-medium text-forest-deep"></span>
             </a>
           </li>
         </ul>
@@ -100,11 +100,11 @@
           </fieldset>
 
           <p class="mt-5 flex gap-3">
-            <button type="button" class="flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md bg-olive px-6 py-3 text-sm text-white transition hover:bg-forest xl:text-base">
+           <button type="button" data-add-to-cart class="flex flex-1 cursor-pointer items-center justify-center gap-3 rounded-md bg-olive px-6 py-3 text-sm text-white transition hover:bg-forest xl:text-base">
               <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
               افزودن به سبد خرید
             </button>
-            <button type="button" aria-label="افزودن به علاقه‌مندی‌ها" class="grid size-12 shrink-0 cursor-pointer place-items-center rounded-md bg-sand text-lg text-forest transition hover:text-gold">
+            <button type="button" data-add-to-cart aria-label="افزودن به علاقه‌مندی‌ها" class="grid size-12 shrink-0 cursor-pointer place-items-center rounded-md bg-sand text-lg text-forest transition hover:text-gold">
               <i class="fa-regular fa-heart" aria-hidden="true"></i>
             </button>
           </p>

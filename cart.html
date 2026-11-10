@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید | Parla</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+
+<body class="flex min-h-screen flex-col overflow-x-hidden bg-paper font-vazir text-ink">
+
+  <p class="bg-moss px-4 py-2 text-center text-xs text-gold-soft xl:text-sm">
+    <i class="fa-solid fa-truck-fast ml-2"></i>
+    ارسال رایگان برای خریدهای بالای ۱,۵۰۰,۰۰۰ تومان
+  </p>
+
+  <header class="bg-forest text-white">
+    <section class="mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-3 xl:grid xl:grid-cols-[1fr_auto_1fr] xl:items-center">
+
+      <div class="contents xl:order-1 xl:flex xl:items-center xl:justify-self-start xl:gap-6">
+
+        <ul class="order-2 flex items-center gap-5 text-lg xl:order-1">
+          <li>
+            <a href="signup.html" aria-label="حساب کاربری" class="hover:text-gold">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </li>
+          <li>
+            <a href="cart.html" aria-label="سبد خرید" class="relative text-gold">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span data-cart-count hidden class="absolute -top-2 -right-2 grid size-4 place-items-center rounded-full bg-gold text-tiny font-medium text-forest-deep"></span>
+            </a>
+          </li>
+        </ul>
+
+        <form role="search" class="relative order-3 w-full xl:order-2 xl:w-72">
+          <input type="search" placeholder="جستجو..." class="h-9 w-full rounded-md bg-white/10 px-4 pl-10 text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-1 focus:ring-gold">
+          <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2 text-sm text-white/70"></i>
+        </form>
+
+      </div>
+
+      <nav class="order-4 w-full border-t border-white/15 pt-3 xl:order-2 xl:w-auto xl:justify-self-center xl:border-t-0 xl:pt-0">
+        <ul class="flex justify-center gap-6 text-tiny xl:gap-8 xl:text-lg">
+          <li><a href="index.html" class="hover:text-gold">خانه</a></li>
+          <li><a href="product.html" class="hover:text-gold">محصولات</a></li>
+          <li><a href="index.html#category" class="hover:text-gold">دسته‌بندی‌ها</a></li>
+          <li><a href="index.html#off" class="hover:text-gold">درباره ما</a></li>
+          <li><a href="contact.html" class="hover:text-gold">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="order-1 text-center leading-none xl:order-3 xl:justify-self-end">
+        <strong class="block font-display text-3xl font-medium tracking-[0.2em] text-gold xl:text-4xl">PARLA</strong>
+        <small class="block font-display text-tiny tracking-[0.5em] text-gold-soft">JEWELRY</small>
+      </a>
+
+    </section>
+  </header>
+
+  <main class="mx-auto w-full max-w-7xl flex-1 px-4 py-8 xl:py-12">
+
+    <header>
+      <nav aria-label="مسیر صفحه" class="text-xs text-ink/60">
+        <ol class="flex items-center gap-2">
+          <li><a href="index.html" class="hover:text-moss">خانه</a></li>
+          <li aria-hidden="true"><i class="fa-solid fa-angle-left"></i></li>
+          <li aria-current="page">سبد خرید</li>
+        </ol>
+      </nav>
+
+      <h1 class="mx-auto my-6 flex w-full max-w-3xl items-center gap-4 px-4">
+        <span class="h-px flex-1 bg-linear-to-r from-transparent to-olive"></span>
+        <span class="font-vazir text-xl whitespace-nowrap xl:text-3xl">سبد خرید</span>
+        <span class="h-px flex-1 -scale-x-100 bg-linear-to-r from-transparent to-olive"></span>
+      </h1>
+    </header>
+
+    <section data-cart-content class="mt-8 grid gap-6 xl:grid-cols-[1fr_22rem] xl:items-start">
+
+      <section aria-label="کالاهای سبد خرید" class="flex flex-col gap-4">
+
+        <ul data-cart-list class="flex flex-col gap-3"></ul>
+
+        <p class="flex items-center justify-between gap-3">
+          <button type="button" data-cart-clear class="flex cursor-pointer items-center gap-2 rounded-full border border-stone px-5 py-2.5 text-xs text-ink/70 transition hover:border-moss hover:text-ink xl:text-sm">
+            <i class="fa-regular fa-trash-can" aria-hidden="true"></i>
+            حذف همه موارد
+          </button>
+          <a href="product.html" class="flex items-center gap-2 rounded-full border border-olive px-6 py-2.5 text-xs text-olive transition hover:bg-olive hover:text-white xl:text-sm">
+            ادامه خرید
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+          </a>
+        </p>
+
+      </section>
+
+      <aside aria-label="خلاصه سفارش" class="rounded-2xl border border-stone/60 bg-sand p-5 xl:sticky xl:top-4 xl:p-6">
+
+        <h2 class="border-b border-stone pb-4 text-lg font-medium xl:text-xl">خلاصه سفارش</h2>
+
+        <dl class="mt-4 grid grid-cols-[1fr_auto] gap-x-4 gap-y-4 text-sm">
+          <dt class="text-ink/70">جمع محصولات (<span data-summary-count>۰</span> کالا)</dt>
+          <dd data-summary-subtotal class="font-medium">۰ تومان</dd>
+
+          <dt class="text-ink/70">هزینه ارسال</dt>
+          <dd data-summary-shipping class="font-medium text-moss">رایگان</dd>
+        </dl>
+
+        <p class="mt-4 flex items-center justify-between gap-4 border-t border-stone pt-4 font-medium">
+          <span>مبلغ قابل پرداخت</span>
+          <output data-summary-total class="text-lg text-forest">۰ تومان</output>
+        </p>
+
+        <button type="button" class="mt-5 flex h-12 w-full cursor-pointer items-center justify-center rounded-full bg-olive-card text-white transition duration-300 hover:bg-forest">
+          ثبت نهایی سفارش
+        </button>
+
+        <p class="mt-3 flex items-center justify-center gap-2 text-xs text-ink/60">
+          <i class="fa-solid fa-lock" aria-hidden="true"></i>
+          پرداخت امن و مطمئن
+        </p>
+
+      </aside>
+
+    </section>
+
+    <section data-cart-empty hidden class="mx-auto mt-10 max-w-md text-center">
+      <p class="text-5xl text-stone" aria-hidden="true"><i class="fa-solid fa-bag-shopping"></i></p>
+      <h2 class="mt-4 text-lg font-medium xl:text-xl">سبد خرید شما خالی است</h2>
+      <p class="mt-2 text-sm text-ink/60">محصولات پارلا را ببینید و هر چه دوست داشتید به سبد اضافه کنید.</p>
+      <a href="product.html" class="mt-6 inline-block rounded-md bg-olive px-8 py-2.5 text-sm text-white transition hover:bg-forest">مشاهده محصولات</a>
+    </section>
+
+    <section class="mt-12 xl:mt-16">
+      <ul class="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-stone rounded-2xl border border-stone bg-sand xl:grid-cols-3 xl:divide-x xl:divide-y-0">
+
+        <li class="flex items-center gap-4 px-6 py-5 xl:justify-center xl:px-8 xl:py-7">
+          <span class="grid size-12 shrink-0 place-items-center rounded-full border border-gold text-lg text-moss">
+            <i class="fa-regular fa-gem" aria-hidden="true"></i>
+          </span>
+          <article>
+            <h3 class="font-medium xl:text-lg">تضمین اصالت کالا</h3>
+            <p class="mt-1 text-xs text-moss xl:text-sm">با خیال راحت خرید کنید</p>
+          </article>
+        </li>
+
+        <li class="flex items-center gap-4 px-6 py-5 xl:justify-center xl:px-8 xl:py-7">
+          <span class="grid size-12 shrink-0 place-items-center rounded-full border border-gold text-lg text-moss">
+            <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+          </span>
+          <article>
+            <h3 class="font-medium xl:text-lg">ارسال سریع</h3>
+            <p class="mt-1 text-xs text-moss xl:text-sm">به سراسر ایران</p>
+          </article>
+        </li>
+
+        <li class="flex items-center gap-4 px-6 py-5 xl:justify-center xl:px-8 xl:py-7">
+          <span class="grid size-12 shrink-0 place-items-center rounded-full border border-gold text-lg text-moss">
+            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+          </span>
+          <article>
+            <h3 class="font-medium xl:text-lg">پشتیبانی حرفه‌ای</h3>
+            <p class="mt-1 text-xs text-moss xl:text-sm">همیشه در کنار شما هستیم</p>
+          </article>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+  <template data-cart-template>
+    <li>
+      <article class="flex flex-wrap items-center gap-x-4 gap-y-3 rounded-2xl border border-stone/60 bg-white/60 p-3 xl:p-4">
+
+        <figure class="size-20 shrink-0 overflow-hidden rounded-xl bg-clay xl:size-28">
+          <img data-item-image src="" alt="" class="size-full object-cover">
+        </figure>
+
+        <h2 data-item-name class="min-w-0 flex-1 font-medium xl:text-lg"></h2>
+
+        <footer class="flex w-full items-center justify-between gap-4 xl:w-auto xl:gap-10">
+
+          <p class="inline-flex items-center rounded-full bg-sand px-1">
+            <button type="button" data-action="minus" aria-label="کم کردن تعداد" class="grid size-8 cursor-pointer place-items-center hover:text-gold">
+              <i class="fa-solid fa-minus text-xs" aria-hidden="true"></i>
+            </button>
+            <output data-item-qty class="w-8 text-center text-sm">۱</output>
+            <button type="button" data-action="plus" aria-label="زیاد کردن تعداد" class="grid size-8 cursor-pointer place-items-center hover:text-gold">
+              <i class="fa-solid fa-plus text-xs" aria-hidden="true"></i>
+            </button>
+          </p>
+
+          <p data-item-price class="text-sm font-medium text-moss xl:min-w-32 xl:text-base"></p>
+
+          <button type="button" data-action="remove" aria-label="حذف از سبد خرید" class="grid size-8 cursor-pointer place-items-center text-ink/50 transition hover:text-ink">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+
+        </footer>
+
+      </article>
+    </li>
+  </template>
+
+  <footer class="bg-forest-deep text-white/80">
+
+    <section class="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-8 px-6 py-10 xl:grid-cols-4 xl:gap-12 xl:px-12 xl:py-14">
+
+      <article class="col-span-2 text-center xl:col-span-1 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">اطلاعات تماس</h2>
+        <address class="not-italic">
+          <ul class="flex flex-col gap-3 text-sm leading-relaxed">
+            <li class="flex items-start justify-center gap-2 xl:justify-start">
+              <i class="fa-solid fa-location-dot mt-1.5 text-gold"></i>
+              تهران، خیابان ولیعصر، کوچه بهار، پلاک ۲۴
+            </li>
+            <li class="flex items-center justify-center gap-2 xl:justify-start">
+              <i class="fa-solid fa-phone text-gold"></i>
+              <a href="tel:78904432" class="hover:text-gold">۷۸۹۰۴۴۳۲</a>
+            </li>
+            <li class="flex items-center justify-center gap-2 xl:justify-start">
+              <i class="fa-regular fa-envelope text-gold"></i>
+              <a href="mailto:info@parla.com" class="hover:text-gold">info@parla.com</a>
+            </li>
+          </ul>
+        </address>
+      </article>
+
+      <nav aria-label="راهنمای خرید" class="border-t border-white/10 pt-6 text-center xl:border-t-0 xl:pt-0 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">راهنمای خرید</h2>
+        <ul class="flex flex-col gap-3 text-sm">
+          <li><a href="#" class="hover:text-gold">سوالات متداول</a></li>
+          <li><a href="#" class="hover:text-gold">شرایط و قوانین</a></li>
+          <li><a href="#" class="hover:text-gold">حریم خصوصی</a></li>
+          <li><a href="#" class="hover:text-gold">روش‌های پرداخت</a></li>
+          <li><a href="#" class="hover:text-gold">پیگیری سفارش</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="دسترسی سریع" class="border-t border-white/10 pt-6 text-center xl:border-t-0 xl:pt-0 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">دسترسی سریع</h2>
+        <ul class="flex flex-col gap-3 text-sm">
+          <li><a href="index.html" class="hover:text-gold">خانه</a></li>
+          <li><a href="product.html" class="hover:text-gold">فروشگاه</a></li>
+          <li><a href="index.html#category" class="hover:text-gold">دسته‌بندی‌ها</a></li>
+          <li><a href="index.html#off" class="hover:text-gold">تخفیف‌ها</a></li>
+          <li><a href="contact.html" class="hover:text-gold">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <article class="col-span-2 border-t border-white/10 pt-6 text-center xl:col-span-1 xl:border-t-0 xl:pt-0 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">درباره پارلا</h2>
+        <p class="mx-auto max-w-xs text-sm leading-loose xl:mx-0 xl:max-w-none">
+          پارلا، جایی که زیبایی و ظرافت در هر جزئیاتی دیده می‌شود. ما با عشق، استایل شما را کامل می‌کنیم.
+        </p>
+        <ul class="mt-5 flex justify-center gap-3 xl:justify-start">
+          <li>
+            <a href="https://instagram.com/parla-accessories" target="_blank" rel="noopener" aria-label="اینستاگرام" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="تلگرام" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="واتساپ" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+    </section>
+
+    <p class="border-t border-white/15 px-4 py-4 text-center">
+      <small class="text-xs">© تمامی حقوق این سایت متعلق به پارلا است.</small>
+    </p>
+
+  </footer>
+
+</body>
+</html>

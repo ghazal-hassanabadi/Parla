@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="داستان پارلا؛ برندی که با عشق به زیبایی، جواهراتی ظریف و ماندگار می‌سازد.">
+  <title>درباره ما | Parla</title>
+
+  <link rel="stylesheet" href="./src/output.css">
+  <script type="module" src="js/index.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="overflow-x-hidden bg-paper font-vazir text-ink">
+
+  <p class="bg-moss px-4 py-2 text-center text-xs text-gold-soft xl:text-sm">
+    <i class="fa-solid fa-truck-fast ml-2"></i>
+    ارسال رایگان برای خریدهای بالای ۱,۵۰۰,۰۰۰ تومان
+  </p>
+
+  <header class="bg-forest text-white">
+    <section class="mx-auto flex flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-3 xl:grid xl:grid-cols-[1fr_auto_1fr] xl:items-center">
+
+      <div class="contents xl:order-1 xl:flex xl:items-center xl:justify-self-start xl:gap-6">
+        <ul class="order-2 flex items-center gap-5 text-lg xl:order-1">
+          <li><a href="signup.html" aria-label="حساب کاربری" class="hover:text-gold"><i class="fa-regular fa-user"></i></a></li>
+          <li>
+            <a href="cart.html" aria-label="سبد خرید" class="relative hover:text-gold">
+              <i class="fa-solid fa-bag-shopping"></i><span data-cart-count hidden class="absolute -top-2 -right-2 grid size-4 place-items-center rounded-full bg-gold text-tiny font-medium text-forest-deep"></span>
+            </a>
+          </li>
+        </ul>
+        <form role="search" class="relative order-3 w-full xl:order-2 xl:w-72">
+          <input type="search" placeholder="جستجو..." class="h-9 w-full rounded-md bg-white/10 px-4 pl-10 text-sm text-white placeholder:text-white/60 focus:outline-none focus:ring-1 focus:ring-gold">
+          <i class="fa-solid fa-magnifying-glass absolute top-1/2 left-3 -translate-y-1/2 text-sm text-white/70"></i>
+        </form>
+      </div>
+
+      <nav aria-label="منوی اصلی" class="order-4 w-full border-t border-white/15 pt-3 xl:order-2 xl:w-auto xl:justify-self-center xl:border-t-0 xl:pt-0">
+        <ul class="flex justify-center gap-6 text-tiny xl:text-lg xl:gap-8">
+          <li><a href="index.html" class="hover:text-gold">خانه</a></li>
+          <li><a href="product.html" class="hover:text-gold">محصولات</a></li>
+          <li><a href="index.html#category" class="hover:text-gold">دسته‌بندی‌ها</a></li>
+          <li><a href="about.html" aria-current="page" class="border-b border-gold pb-1 text-gold">درباره ما</a></li>
+          <li><a href="contact.html" class="hover:text-gold">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="order-1 text-center leading-none xl:order-3 xl:justify-self-end">
+        <strong class="block font-display text-3xl font-medium tracking-[0.2em] text-gold xl:text-4xl">PARLA</strong>
+        <small class="block font-display text-tiny tracking-[0.5em] text-gold-soft">JEWELRY</small>
+      </a>
+
+    </section>
+  </header>
+
+  <main>
+
+    <!-- هیرو -->
+    <section class="relative flex h-72 items-center overflow-hidden bg-linen px-6 xl:h-96 xl:px-20">
+
+      <div class="absolute inset-0 xl:left-auto xl:w-[48%]">
+        <img src="image/about2.jpeg" alt="جعبه سبز جواهرات پارلا همراه روبان و گل‌های ظریف" class="size-full object-cover xl:rounded-[60%_0_0_60%/100%_0_0_100%]">
+        <div class="absolute inset-0 bg-linen/70 xl:hidden"></div>
+        <span aria-hidden="true" class="absolute inset-y-0 -left-3 right-0 hidden rounded-[60%_0_0_60%/100%_0_0_100%] border-2 border-gold/70 xl:block"></span>
+      </div>
+
+      <hgroup class="relative z-10 w-full text-center xl:ms-auto xl:w-5/12">
+        <h1 class="text-5xl font-bold text-forest xl:text-7xl">درباره ما</h1>
+        <p class="mt-3 text-sm text-ink/80 xl:mt-5 xl:text-xl">داستان پارلا، داستان عشق به زیبایی و ظرافت</p>
+        <div class="mx-auto mt-4 flex max-w-48 items-center gap-3 xl:mt-6" aria-hidden="true">
+          <span class="h-px flex-1 bg-forest/40"></span>
+          <i class="fa-solid fa-diamond text-[8px] text-forest"></i>
+          <span class="h-px flex-1 bg-forest/40"></span>
+        </div>
+      </hgroup>
+
+      <svg aria-hidden="true" viewBox="0 0 1440 120" preserveAspectRatio="none" class="absolute inset-x-0 bottom-0 h-10 w-full fill-paper xl:h-20">
+        <path d="M0 70C300 0 600 110 1000 70C1200 50 1350 30 1440 50V120H0Z"/>
+      </svg>
+    </section>
+
+    <!-- داستان برند -->
+    <section class="relative px-4 py-10 xl:py-16">
+     
+
+      <article class="relative mx-auto grid max-w-6xl items-center gap-10 xl:grid-cols-2 xl:gap-20">
+
+        <div class="xl:pe-16">
+          <h2 class="flex items-center gap-4 text-2xl font-medium xl:text-3xl">
+              پارلا
+            <span class="h-px flex-1 bg-olive/40"></span>
+          </h2>
+          <p class="mt-6 text-sm leading-loose text-ink/80 xl:text-base xl:leading-10">
+            پارلا، برندی است متولد از عشق به زیبایی، ظرافت و جزئیات. ما در پارلا باور داریم که زیورآلات، تنها یک اکسسوری نیست؛ بلکه بخشی از داستان شماست: داستان اعتماد به نفس، درخشش و لحظه‌های خاص زندگی.
+          </p>
+          <p class="mt-4 text-sm leading-loose text-ink/80 xl:text-base xl:leading-10">
+            از ابتدا هدف ما خلق محصولاتی با کیفیت، طراحی منحصربه‌فرد و الهام‌گرفته از زندگی و زیبایی بوده است؛ تا در کنار شما باشیم، در مهم‌ترین و خاص‌ترین لحظات زندگی‌تان.
+          </p>
+          <a href="product.html" class="mt-6 inline-flex items-center gap-3 rounded-md border border-forest px-6 py-2.5 text-sm text-forest hover:bg-forest hover:text-white">
+            بیشتر بدانید
+            <i class="fa-solid fa-arrow-left"></i>
+          </a>
+        </div>
+
+        <figure class="relative mx-auto w-64 xl:w-80">
+          <span aria-hidden="true" class="absolute inset-0 translate-x-3 translate-y-3 rounded-t-full border border-gold/60"></span>
+          <img src="image/Luxury Neutral Jewelry Asset Sheet.png" alt="حلقه طلایی روی پایه سنگی کنار گل‌های ژیپسوفیلا" class="relative aspect-3/4 w-full rounded-t-full bg-clay object-cover">
+        </figure>
+
+      </article>
+    </section>
+
+    <!-- چرا پارلا -->
+    <section class="px-4 py-6 xl:py-10">
+      <article class="mx-auto grid max-w-7xl items-center gap-6 rounded-2xl border border-stone/60 bg-sand px-4 py-6 xl:grid-cols-[1fr_2fr] xl:gap-0 xl:px-10 xl:py-8">
+
+        <header class="text-center xl:pe-8 xl:text-right">
+          <h2 class="text-2xl font-medium">چرا پارلا؟</h2>
+          <p class="mt-3 text-xs leading-loose text-moss xl:text-sm">ما در پارلا با تمرکز بر کیفیت، طراحی خاص و تجربه‌ای لذت‌بخش برای شما، تلاش می‌کنیم تا انتخابی متفاوت و ماندگار ارائه دهیم.</p>
+        </header>
+
+        <ul class="grid grid-cols-2 gap-y-6 xl:grid-cols-4 xl:gap-y-0">
+          <li class="flex flex-col items-center gap-2 px-2 text-center xl:border-s xl:border-stone">
+            <i class="fa-solid fa-headset text-3xl text-moss"></i>
+            <strong class="text-sm font-medium">پشتیبانی حرفه‌ای</strong>
+          </li>
+          <li class="flex flex-col items-center gap-2 px-2 text-center xl:border-s xl:border-stone">
+            <i class="fa-solid fa-gift text-3xl text-moss"></i>
+            <strong class="text-sm font-medium">بسته‌بندی شیک</strong>
+          </li>
+          <li class="flex flex-col items-center gap-2 px-2 text-center xl:border-s xl:border-stone">
+            <i class="fa-solid fa-shield-halved text-3xl text-moss"></i>
+            <strong class="text-sm font-medium">کیفیت تضمینی</strong>
+          </li>
+          <li class="flex flex-col items-center gap-2 px-2 text-center xl:border-s xl:border-stone">
+            <i class="fa-regular fa-gem text-3xl text-moss"></i>
+            <strong class="text-sm font-medium">طراحی منحصربه‌فرد</strong>
+          </li>
+        </ul>
+
+      </article>
+    </section>
+
+    <!-- ارزش‌ها -->
+    <section class="px-4 py-10 xl:py-16">
+      <article class="mx-auto grid max-w-6xl items-center gap-10 xl:grid-cols-2 xl:gap-16">
+
+        <div class="xl:pe-10">
+          <h2 class="flex items-center gap-4 text-2xl font-medium xl:text-3xl">
+            ارزش‌های ما
+            <span class="h-px flex-1 bg-olive/40"></span>
+          </h2>
+          <ul class="mt-6 flex flex-col gap-4">
+            <li class="flex items-center gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-full border border-stone bg-sand text-lg text-moss"><i class="fa-regular fa-gem"></i></span>
+              <span class="text-sm xl:text-lg">زیبایی در جزئیات</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-full border border-stone bg-sand text-lg text-moss"><i class="fa-solid fa-shield-halved"></i></span>
+              <span class="text-sm xl:text-lg">تعهد به کیفیت</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-full border border-stone bg-sand text-lg text-moss"><i class="fa-regular fa-heart"></i></span>
+              <span class="text-sm xl:text-lg">رضایت شما، اولویت ماست</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <span class="grid size-12 shrink-0 place-items-center rounded-full border border-stone bg-sand text-lg text-moss"><i class="fa-regular fa-star"></i></span>
+              <span class="text-sm xl:text-lg">همراهی در لحظه‌های خاص</span>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="relative">
+          <span aria-hidden="true" class="absolute right-0 bottom-0 h-3/4 w-1/3 rounded-tr-[4rem] bg-olive-card"></span>
+          <img src="image/Gemini_Generated_Image_vro1bjvro1bjvro1 (2).jpeg" alt="لوگوی پارلا روی دیوار کنار گلدان گل" class="relative aspect-4/3 w-[88%] rounded-t-[10rem] bg-clay object-cover">
+        </figure>
+
+      </article>
+    </section>
+
+    <!-- تیم ما -->
+    <section class="px-4 py-6 xl:py-10">
+      <article class="mx-auto max-w-7xl rounded-2xl border border-stone/60 bg-linen px-4 py-8 text-center xl:px-10">
+
+        <h2 class="mx-auto flex max-w-xl items-center gap-4 text-2xl font-medium">
+          <span class="h-px flex-1 bg-linear-to-r from-transparent to-olive"></span>
+          تیم ما
+          <span class="h-px flex-1 bg-linear-to-r from-transparent to-olive -scale-x-100"></span>
+        </h2>
+        <p class="mt-3 text-xs text-ink/80 xl:text-sm">ما یک تیم کوچک اما پرانرژی هستیم؛ عاشق زیبایی، خلاقیت و ساختن تجربه‌ای متفاوت برای شما.</p>
+
+        <ul class="mx-auto mt-6 grid max-w-3xl grid-cols-3 xl:mt-8">
+          <li class="flex flex-col items-center gap-3 px-2">
+            <span class="grid size-12 place-items-center rounded-full border border-stone bg-sand text-xl text-moss xl:size-16 xl:text-2xl"><i class="fa-regular fa-star"></i></span>
+            <strong class="text-xs font-medium xl:text-base">تیم پشتیبانی حرفه‌ای</strong>
+          </li>
+          <li class="flex flex-col items-center gap-3 border-x border-stone px-2">
+            <span class="grid size-12 place-items-center rounded-full border border-stone bg-sand text-xl text-moss xl:size-16 xl:text-2xl"><i class="fa-regular fa-heart"></i></span>
+            <strong class="text-xs font-medium xl:text-base">مشاوران دلسوز</strong>
+          </li>
+          <li class="flex flex-col items-center gap-3 px-2">
+            <span class="grid size-12 place-items-center rounded-full border border-stone bg-sand text-xl text-moss xl:size-16 xl:text-2xl"><i class="fa-regular fa-gem"></i></span>
+            <strong class="text-xs font-medium xl:text-base">طراحان خلاق</strong>
+          </li>
+        </ul>
+
+      </article>
+    </section>
+
+<!-- دعوت به مشاهده کالکشن -->
+<section class="px-4 py-6 xl:py-10">
+  <article class="bg-leaves mx-auto flex max-w-7xl flex-col items-center gap-5 rounded-2xl bg-olive-card px-6 py-8 text-center text-white xl:flex-row xl:justify-between xl:px-16 xl:py-10 xl:text-right">
+
+    <header>
+      <h2 class="text-xl font-medium xl:text-2xl">زیبایی را در جزئیات پیدا کنید</h2>
+      <p class="mt-2 text-xs text-white/80 xl:text-sm">کالکشن جدید پارلا را ببینید و قطعه‌ای را انتخاب کنید که داستان شما را کامل می‌کند.</p>
+    </header>
+
+    <a href="product.html" class="inline-flex items-center gap-3 rounded-full bg-gold-soft px-8 py-3 text-sm font-medium whitespace-nowrap text-forest-deep hover:bg-gold">
+      مشاهده محصولات
+      <i class="fa-solid fa-arrow-left"></i>
+    </a>
+
+  </article>
+</section>
+
+  </main>
+
+  <footer class="mt-6 border-t-2 border-gold/60 bg-forest-deep text-white/80">
+
+    <section class="mx-auto grid max-w-7xl grid-cols-2 gap-x-4 gap-y-8 px-6 py-10 xl:grid-cols-[1.2fr_1fr_1fr_1fr] xl:gap-12 xl:px-12 xl:py-14">
+
+      <article class="col-span-2 text-center xl:col-span-1 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">اطلاعات تماس</h2>
+        <address class="not-italic">
+          <ul class="flex flex-col gap-3 text-sm leading-relaxed">
+            <li class="flex items-start justify-center gap-2 xl:justify-start"><i class="fa-solid fa-location-dot mt-1.5 text-gold"></i>تهران، خیابان ولیعصر، کوچه بهار، پلاک ۲۴</li>
+            <li class="flex items-center justify-center gap-2 xl:justify-start"><i class="fa-solid fa-phone text-gold"></i><a href="tel:78904432" class="hover:text-gold">۷۸۹۰۴۴۳۲</a></li>
+            <li class="flex items-center justify-center gap-2 xl:justify-start"><i class="fa-regular fa-envelope text-gold"></i><a href="mailto:info@parla.com" class="hover:text-gold">info@parla.com</a></li>
+          </ul>
+        </address>
+      </article>
+
+      <nav aria-label="راهنمای خرید" class="border-t border-white/10 pt-6 text-center xl:border-t-0 xl:pt-0 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">راهنمای خرید</h2>
+        <ul class="flex flex-col gap-3 text-sm">
+          <li><a href="#" class="hover:text-gold">سوالات متداول</a></li>
+          <li><a href="#" class="hover:text-gold">روش‌های پرداخت</a></li>
+          <li><a href="#" class="hover:text-gold">حریم خصوصی</a></li>
+          <li><a href="#" class="hover:text-gold">شرایط بازگشت</a></li>
+          <li><a href="#" class="hover:text-gold">پیگیری سفارش</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="دسترسی سریع" class="border-t border-white/10 pt-6 text-center xl:border-t-0 xl:pt-0 xl:text-right">
+        <h2 class="mb-4 font-medium text-gold xl:text-lg">دسترسی سریع</h2>
+        <ul class="flex flex-col gap-3 text-sm">
+          <li><a href="index.html" class="hover:text-gold">خانه</a></li>
+          <li><a href="product.html" class="hover:text-gold">محصولات</a></li>
+          <li><a href="index.html#category" class="hover:text-gold">دسته‌بندی‌ها</a></li>
+          <li><a href="about.html" class="hover:text-gold">درباره ما</a></li>
+          <li><a href="contact.html" class="hover:text-gold">تماس با ما</a></li>
+        </ul>
+      </nav>
+
+      <article class="col-span-2 flex flex-col items-center gap-5 border-t border-white/10 pt-6 xl:col-span-1 xl:items-end xl:border-t-0 xl:pt-0">
+        <a href="index.html" class="text-center leading-none">
+          <strong class="block font-display text-4xl font-medium tracking-[0.2em] text-gold">PARLA</strong>
+          <small class="block font-display text-tiny tracking-[0.5em] text-gold-soft">JEWELRY</small>
+        </a>
+        <ul class="flex gap-3">
+          <li><a href="https://instagram.com/parla-accessories" target="_blank" rel="noopener" aria-label="اینستاگرام" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" aria-label="تلگرام" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold"><i class="fa-brands fa-telegram"></i></a></li>
+          <li><a href="#" aria-label="پینترست" class="grid size-10 place-items-center rounded-full border border-white/30 hover:border-gold hover:text-gold"><i class="fa-brands fa-pinterest-p"></i></a></li>
+        </ul>
+      </article>
+
+    </section>
+
+    <p class="border-t border-white/15 px-4 py-4 text-center"><small class="text-xs">© تمامی حقوق مادی و معنوی این سایت متعلق به پارلا است.</small></p>
+  </footer>
+
+</body>
+</html>
